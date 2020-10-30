@@ -3,7 +3,7 @@
 a {
 color:white;
 background: lightslategray;
-font-size: 20px;
+font-size: 50px;
 font-family: Arial, Helvetica, sans-serif;
 padding: 10px;
 text-decoration: none;
@@ -12,10 +12,10 @@ text-decoration: none;
 
 h1 {
     color:white;
-    font-size: xx-large;
+    font-size: 80px;
     
 }
 h2 {
     color:white;
-    font-size: larger;
+    font-size: 70px;
 }
