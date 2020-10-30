@@ -1,8 +1,4 @@
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:wght@600&display=swap');
-</style>
 
 a {
 color:white;
@@ -13,11 +9,3 @@ padding: 10px;
 text-decoration: none;
 
 }
-
-h1{
-    font-family: 'Abril Fatface', cursive;
-  }
-  
-  h2 {
-    font-family: 'Playfair Display', serif;
-  }
