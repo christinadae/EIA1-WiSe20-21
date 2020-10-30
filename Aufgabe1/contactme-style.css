@@ -1,14 +1,14 @@
 body {
-	font-family: 'Dosis';
-	font-size: small;
-	background:  #3b3b3b;
-	color: white;
+	font-family:'Dosis';
+		font-size:70px;
+	background: #3b3b3b;
+	color:white;
 	
 }
 a {
     font-family: 'Dosis';
 color: white;
-background:#646363;
-font-size: 35px;
+	background: #3b3b3b;
+font-size: 70px;
 text-decoration: none;
 }
