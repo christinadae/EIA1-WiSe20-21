@@ -17,7 +17,6 @@ h1 {
 h2 {
     color:white;
     font-size: 40px;
-    border-style: groove;
     border-color: lightgrey;
-    
+    border-bottom-style:solid;
 }
