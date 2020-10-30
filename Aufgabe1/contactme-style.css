@@ -1,0 +1,14 @@
+body {
+	font-family: 'Dosis';
+	font-size: small;
+	background:  #3b3b3b;
+	color: white;
+	
+}
+a {
+    font-family: 'Dosis';
+color: white;
+background:#646363;
+font-size: 35px;
+text-decoration: none;
+}
