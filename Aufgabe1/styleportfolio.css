@@ -1,3 +1,9 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:wght@600&display=swap');
+</style>
+
 a {
 color:white;
 background:#6e4f56;
@@ -6,13 +12,6 @@ font-family: Arial, Helvetica, sans-serif;
 padding: 10px;
 text-decoration: none;
 
-}
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:wght@600&display=swap');
-</style>
-body {
-    font-family: 'Abril Fatface', cursive;
 }
 
 h1{
