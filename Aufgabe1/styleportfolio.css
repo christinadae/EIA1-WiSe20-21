@@ -20,12 +20,14 @@ h1 {
     font-family: 'Dosis';
     color:white;
     font-size: 70px;
+    border-bottom-style: solid;
+    border-color: #646363;
     
 }
 h2 {
     font-family: 'Dosis';
     color:white;
     font-size: 40px;
-    border-color: black;
+    border-color:#646363;
     border-bottom-style:solid;
 }
