@@ -1,21 +1,23 @@
 body {
-	
+	font-family: 'Dosis';
 	font-size: small;
 	background:  #3b3b3b;
 	color: white;
-	font-family: 'Dosis';
+	
 }
 
 a:link {
+font-family: 'Dosis';
 color:white;
 background:#646363;
 font-size: 30px;
-font-family: 'Dosis';
+
 text-decoration: none;
 
 }
 
 h1 {
+    font-family: 'Dosis';
     color:white;
     font-size: 70px;
     
