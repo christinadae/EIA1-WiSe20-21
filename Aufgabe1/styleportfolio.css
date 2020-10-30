@@ -1,8 +1,14 @@
-
+body {
+	
+	font-size: small;
+	background:  #3b3b3b;
+	color: white;
+	font-family: 'Dosis';
+}
 
 a:link {
 color:white;
-background: lightslategray;
+background:#646363;
 font-size: 30px;
 font-family: 'Dosis';
 text-decoration: none;
@@ -15,6 +21,7 @@ h1 {
     
 }
 h2 {
+    font-family: 'Dosis';
     color:white;
     font-size: 40px;
     border-color: black;
