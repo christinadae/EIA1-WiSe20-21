@@ -13,5 +13,22 @@ ul {
   li {
       display: inline;
       float: right;
-      
+
+  }
+
+  li a {
+    display: block;
+    padding: 10px;
+    background-color:rgb(185, 160, 136);
+    text-decoration: none;
+  }
+
+  li a.active {
+    background-color:rgb(156, 132, 109);
+    color: white;
+  }
+
+  li a:hover:not(.active) {
+    background-color: rgb(206, 188, 172);
+    color: white;
   }
