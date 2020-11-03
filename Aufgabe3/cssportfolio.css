@@ -3,3 +3,9 @@ body {
     background-image: url("https://raw.githubusercontent.com/gabriel-rausch/EIA1-Material/master/L03/task_material/images/bg.png");
     color:#4C4A4A;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
