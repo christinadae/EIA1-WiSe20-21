@@ -31,3 +31,8 @@ ul {
   .active {
     background-color: #8f765f;
   }
+
+  h1 {
+    color:#4C4A4A;
+    font-size: 80px;
+  }
