@@ -21,9 +21,9 @@ ul {
   li a {
     display: block;
     color: white;
-    text-align: right;
     padding: 14px 16px;
     text-decoration: none;
+    background-color:rgb(189, 176, 156);
   }
   
   li a:hover:not(.active) {
