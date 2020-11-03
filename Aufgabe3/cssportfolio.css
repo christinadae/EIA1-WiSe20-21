@@ -54,7 +54,11 @@ color:#636060;
   }
 
   .header {
-    background-color: #868080;
+    background-color: #adadad;
     padding: 20px;
     text-align: center;
+  }
+
+  p.small {
+    line-height: 0.8;
   }
