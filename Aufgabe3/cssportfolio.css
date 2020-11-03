@@ -29,7 +29,7 @@ ul {
   }
   
   .active {
-    background-color: #8f765f;
+    background-color:#ad9986;
   }
 
   h1 {
@@ -54,7 +54,7 @@ color:#636060;
   }
 
   .header {
-    background-color: #ad9986;
+    background-color:rgb(219, 200, 170);
     padding: 20px;
     text-align: center;
   }
