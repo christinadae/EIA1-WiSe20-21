@@ -8,6 +8,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-decoration: none;
   }
 
   li {
@@ -21,7 +22,6 @@ ul {
     padding: 30px;
     background-color:rgb(185, 160, 136);
     text-decoration: none;
-    text-align: center;
   }
 
   li a.active {
