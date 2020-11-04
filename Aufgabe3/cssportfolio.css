@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
     background-image: url("https://raw.githubusercontent.com/gabriel-rausch/EIA1-Material/master/L03/task_material/images/bg.png");
     color:#4C4A4A;
+    text-align: center;
 }
 .myDiv {
   background:rgba(236, 224, 203, 0.651);
@@ -48,6 +49,7 @@ a {
   h2 {
     font-size: 40px;
 color:#636060;
+text-align: left;
   }
 
   h3 {
@@ -64,8 +66,4 @@ color:#636060;
   p.small {
     line-height: 0.8;
   }
-
-  p {
-    padding: 1px 1px 1px 1px;
-    margin: 1px 1px 1px 1px;
-  }
+  
