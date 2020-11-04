@@ -6,7 +6,7 @@ body {
 .myDiv {
   background:rgba(236, 224, 203, 0.651);
   width: auto;
-  padding: 40px 40px 40px 40px;
+  padding: 10px 10px 10px 10px;
 }
 ul {
     list-style-type: none;
