@@ -25,6 +25,7 @@ body {
   right: 0;
   padding: 3px 3px 3px 3px;
   background-color:rgba(236, 224, 203, 0.651);
+  letter-spacing: -0.1em;
 
 }
 .currentpage {
@@ -67,6 +68,7 @@ text-decoration: none;
     margin: -10px 7px -100px 7px;
     text-align: center;
     font-weight: bolder;
+    letter-spacing: 0.3em;
    
   }
 
@@ -80,10 +82,13 @@ margin: 50px 50px 5px 50px;
 font-weight: initial;
   }
 
-  h3 {font-size: 40px;
+  h3 {font-size: 60px;
     color:#7c7878;
     line-height: 3px;
-    text-align: center;
+    text-align: left;
+    padding: 10px 10px 10px 157px;
+   
+    letter-spacing: -0.1em;
   
   }
 
