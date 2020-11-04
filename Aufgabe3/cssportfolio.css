@@ -16,7 +16,7 @@ body {
   justify-content: center;
   top: 0;
   right: 0;
-  padding: 8px 8px 8px 8px;
+  padding: 12px 12px 12px 12px;
   background-color:rgb(189, 176, 156);
 
 }
@@ -24,27 +24,24 @@ body {
   background-color:rgb(241, 218, 182); 
   text-decoration: none;
 }
-.a {
+a {
   text-decoration: none;
   font-size: 20px;
   color:#4C4A4A;
   padding: 15px 15px 15px 15px;
 }
 .link {
-  color: rgb(184, 164, 133);
+  color: #363434;
+
+  text-decoration: none;
 }
 .link:hover {
-color: rgb(255, 241, 218);
+background-color:rgb(255, 241, 218);
+color: #4C4A4A;
 text-decoration: none;
 
 }
 
-  
-  li {
-    float: right;
-    text-decoration: none;
-    
-  }
 
   h1 {
     color:#4C4A4A;
