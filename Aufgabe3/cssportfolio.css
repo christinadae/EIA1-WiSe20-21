@@ -36,7 +36,7 @@ a {
   text-decoration: none;
 }
 .link:hover {
-background-color:rgb(235, 219, 196);
+background-color:rgba(236, 224, 203, 0.651);
 color: #4C4A4A;
 text-decoration: none;
 
