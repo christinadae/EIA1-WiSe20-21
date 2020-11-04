@@ -21,7 +21,7 @@ body {
 
 }
 .currentpage {
-  background-color:rgb(241, 218, 182); 
+  background-color:rgb(214, 204, 191); 
   text-decoration: none;
 }
 a {
@@ -36,7 +36,7 @@ a {
   text-decoration: none;
 }
 .link:hover {
-background-color:rgb(233, 215, 187);
+background-color:rgb(235, 219, 196);
 color: #4C4A4A;
 text-decoration: none;
 
