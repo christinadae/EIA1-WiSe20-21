@@ -20,11 +20,18 @@ body {
   background-color:rgb(189, 176, 156);
 
 }
+.currentpage {
+  color:rgb(223, 201, 168); 
+}
 a {
   text-decoration: none;
   font-size: 20px;
   color:#4C4A4A;
   padding: 15px 15px 15px 15px;
+}
+.a:hover {
+color: rgb(185, 168, 141);
+
 }
 
   
@@ -32,11 +39,6 @@ a {
     float: right;
     text-decoration: none;
     
-  }
-  
-  
-  li a:hover:not(.active) {
-    background-color: rgb(223, 201, 168);
   }
   
   .active {
@@ -57,7 +59,7 @@ color:#636060;
 text-align: center;
 line-height: 3px;
 padding: 1px 1px 1px 1px;
-margin: 40px 40px 40px 40px;
+margin: 50px 50px 50px 50px;
   }
 
   h3 {
