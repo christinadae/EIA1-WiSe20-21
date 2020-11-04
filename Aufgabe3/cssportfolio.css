@@ -21,15 +21,15 @@ body {
 
 }
 .currentpage {
-  color:rgb(223, 201, 168); 
+  background-color:rgb(223, 201, 168); 
 }
-a {
+.a {
   text-decoration: none;
   font-size: 20px;
   color:#4C4A4A;
   padding: 15px 15px 15px 15px;
 }
-.a:hover {
+.link:hover {
 color: rgb(185, 168, 141);
 
 }
@@ -40,10 +40,6 @@ color: rgb(185, 168, 141);
     text-decoration: none;
     
   }
-  
-  .active {
-    background-color:rgb(223, 201, 168); 
-   }
 
   h1 {
     color:#4C4A4A;
