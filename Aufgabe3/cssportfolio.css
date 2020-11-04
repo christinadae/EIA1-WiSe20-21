@@ -59,3 +59,7 @@ color:#636060;
   p.small {
     line-height: 0.8;
   }
+
+  p {
+    padding: 1px;
+  }
