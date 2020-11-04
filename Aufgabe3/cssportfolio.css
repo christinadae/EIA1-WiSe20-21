@@ -4,19 +4,26 @@ body {
     color:#4C4A4A;
     text-align: center;
 }
-.myDiv {
-  background:rgba(236, 224, 203, 0.651);
-  width: auto;
-  padding: 10px 10px 10px 10px;
-}
 
+.kreis {
+  background: rgba(236, 224, 203, 0.651);
+  border-radius: 0px 0px 400px 400px;
+  height: 400px;
+  width: 800px;
+  font-family: sans-serif;
+  margin: -20px;
+  text-align: center;
+  
+  
+  
+}
 .navbar {
   position: fixed;
   display: flex;
   justify-content: center;
   top: 0;
   right: 0;
-  padding: 12px 12px 12px 12px;
+  padding: 3px 3px 3px 3px;
   background-color:rgb(189, 176, 156);
 
 }
@@ -28,7 +35,7 @@ a {
   text-decoration: none;
   font-size: 20px;
   color:#4C4A4A;
-  padding: 15px 15px 15px 15px;
+  padding: 3px 3px 3px 3px;
 }
 .link {
   color: #363434;
@@ -46,8 +53,8 @@ text-decoration: none;
   h1 {
     color:#4C4A4A;
     font-size: 100px;
-    padding: 25px 10px 10px 10px;
-    margin: 25px 7px 7px 7px;
+    padding: -10px 10px 10px 10px;
+    margin: 0px 7px 7px 7px;
    
   }
 
@@ -56,8 +63,8 @@ text-decoration: none;
 color:#636060;
 text-align: center;
 line-height: 3px;
-padding: 1px 1px 1px 1px;
-margin: 50px 50px 50px 50px;
+padding: 0px 1px 1px 1px;
+margin: 0px 50px 50px 50px;
   }
 
   h3 {
