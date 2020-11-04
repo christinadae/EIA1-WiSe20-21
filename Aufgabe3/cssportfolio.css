@@ -38,8 +38,8 @@ a {
   }
   
   .active {
-    background-color:#ad9986;
-  }
+    background-color:rgb(223, 201, 168); 
+   }
 
   h1 {
     color:#4C4A4A;
