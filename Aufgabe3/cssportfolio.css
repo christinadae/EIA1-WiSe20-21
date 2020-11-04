@@ -66,5 +66,6 @@ color:#636060;
   }
 
   p {
-    padding: 1px;
+    padding: 1px 1px 1px 1px;
+    margin: 1px 1px 1px 1px;
   }
