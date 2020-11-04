@@ -46,17 +46,20 @@ a {
     font-size: 100px;
     padding: 10px 10px 10px 10px;
     margin: 7px 7px 7px 7px;
+    line-height: 1.1;
   }
 
   h2 {
     font-size: 40px;
 color:#636060;
-text-align: left;
+text-align: center;
+line-height: 1.1;
   }
 
   h3 {
     font-size: 25px;
     color:#7c7878;
+    line-height: 1.1;
   }
 
   img {
