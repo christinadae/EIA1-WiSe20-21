@@ -18,11 +18,13 @@ body {
   padding: 10px;
   padding-left: 7px;
   background-color:rgb(189, 176, 156);
-  text-decoration: none;
-  color: white;
-font-size: 10px;
-}
 
+}
+a {
+  text-decoration: none;
+  font-size: 10px;
+  color: white;
+}
   
   li {
     float: right;
