@@ -73,3 +73,6 @@ line-height: 3px;
     line-height: 0.8;
   }
   
+  p.big {
+    line-height: 5px;
+  }
