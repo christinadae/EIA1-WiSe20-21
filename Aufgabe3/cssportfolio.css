@@ -15,19 +15,20 @@ body {
   justify-content: center;
   top: 0;
   right: 0;
-  padding: 10px;
-  padding-left: 7px;
+  padding: 15px 15px 15px 15px;
   background-color:rgb(189, 176, 156);
 
 }
 a {
   text-decoration: none;
-  font-size: 10px;
-  color: white;
+  font-size: 35px;
+  color:#4C4A4A;
 }
   
   li {
     float: right;
+    text-decoration: none;
+    
   }
   
   
