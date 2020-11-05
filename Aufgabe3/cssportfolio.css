@@ -32,10 +32,18 @@ body {
 .icon {
   color: #4C4A4A;
   background-color: rgba(236, 224, 203, 0.651);
+  border-style: none;
+  text-decoration: none;
  
 
 }
-)
+
+.iconhover:hover {
+  border-style: none;
+  text-decoration: none;
+  color: rgb(236, 224, 203);
+}
+
 .currentpage {
   background-color:rgba(206, 195, 176, 0.788);
   text-decoration: none;
