@@ -28,6 +28,9 @@ body {
   letter-spacing: -0.1em;
 
 }
+.iconhover {
+  background-color:#666363;
+}
 .currentpage {
   background-color:rgba(206, 195, 176, 0.788);
   text-decoration: none;
