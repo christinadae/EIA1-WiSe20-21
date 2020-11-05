@@ -113,8 +113,11 @@ font-weight: initial;
   h4 {  font-size: 25px;
     color:#7c7878;
     line-height: 3px;
-
+    padding: 8px 50px 8px 230px;
   }
+  }
+
+
 
   img {
     display: block;
@@ -127,7 +130,16 @@ font-weight: initial;
   }
   
   p.big {
-    line-height: 50px;
+    line-height: 20px;
+    text-align: left;
+    padding: 8px 50px 8px 230px;
+    letter-spacing: 0.2em;
+    font-size: 20px;
+    font-weight: normal;
+    
+    
+  }
+ 
   }
   p.solid {
     border-style: solid;
