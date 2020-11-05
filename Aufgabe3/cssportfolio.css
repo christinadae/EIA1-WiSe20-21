@@ -137,3 +137,47 @@ font-weight: initial;
     border-width: 1px;
     margin: 0px 295px 0px 295px;
   }
+
+
+
+/*contact*/
+
+    /*Layout kontaktformular*/
+    .kontaktformular label{
+      display: block;
+      position: absolute;
+      color: white;
+      font-size: 16px;
+      padding: 13px 10px 10px 13px;
+  }
+
+  .kontaktformular div{
+      position: relative;
+      padding: 8px 50px 8px 214px;
+      margin: 1rem;
+      text-align: left;
+
+  }
+
+  .kontaktformular input[type="text"],
+  .kontaktformular input[type="email"],
+  .kontaktformular textarea{
+      border: none;
+      background-color: #c5c4c4;
+      padding: 16px 0px 10px 0px;
+      font-size: 20px;
+  
+  }
+
+  .button{
+      font-size: 20px;
+      font-family: sans-serif;
+      border: 0px;
+      color: white;
+      background-color: #919191;
+      cursor: pointer;
+      padding: 5px 5px 5px 5px;
+  }
+
+
+
