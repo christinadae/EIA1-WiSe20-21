@@ -6,7 +6,7 @@ body {
 }
 
 .kreis {
-  background: rgba(236, 224, 203, 0.651);
+  background: rgb(236, 224, 203);
   border-radius: 0px 0px 400px 400px;
   height: 400px;
   width: 800px;
@@ -23,25 +23,27 @@ body {
   justify-content: center;
   top: 0;
   right: 0;
-  padding: 3px 3px 3px 3px;
-  background-color:rgba(236, 224, 203, 0.651);
-  letter-spacing: -0.1em;
+  padding: 3px 0px 2px 0px;
+  background-color:rgb(236, 224, 203);
+  letter-spacing: 0.3em;
 
 }
 
-.icon {
-  color: #4C4A4A;
-  background-color: rgba(236, 224, 203, 0.651);
-  border-style: none;
-  text-decoration: none;
+#icon {
+ 
+  opacity: 65%;
+  top: 60%;
+  left: 65%;
+  right: 20%;
+  text-align: center;
+  
+
  
 
 }
 
-.iconhover:hover {
-  border-style: none;
-  text-decoration: none;
-  color: rgb(236, 224, 203);
+#icon:hover {
+  opacity: 100%;
 }
 
 .currentpage {
