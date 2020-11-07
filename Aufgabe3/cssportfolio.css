@@ -23,10 +23,9 @@ body {
   justify-content: center;
   top: 0;
   right: 0;
-  padding: 0px 0px 0px 0px;
+  padding: 0px 3px 0px 0px;
   background-color:rgb(236, 224, 203);
   letter-spacing: 0.3em;
-
 }
 
 #icon {
@@ -47,8 +46,9 @@ body {
 }
 
 .currentpage {
-  background-color:rgba(206, 195, 176, 0.788);
+  font-size: 27px;
   text-decoration: none;
+
 }
 a {
   text-decoration: none;
@@ -58,6 +58,8 @@ a {
 }
 .link {
   color:#302f2f;
+  padding: 0px 0px 0px 0px;
+ 
 
   text-decoration: none;
 }
