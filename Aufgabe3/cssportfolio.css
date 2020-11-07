@@ -23,7 +23,7 @@ body {
   justify-content: center;
   top: 0;
   right: 0;
-  padding: 3px 0px 2px 0px;
+  padding: 0px 0px 0px 0px;
   background-color:rgb(236, 224, 203);
   letter-spacing: 0.3em;
 
@@ -115,7 +115,13 @@ font-weight: initial;
     line-height: 3px;
     padding: 8px 50px 8px 230px;
   }
-  }
+  
+  h5 {
+    font-size: 17px;
+    color:#6e6e6e;
+    text-align: left;
+    opacity: 80%;
+   text-decoration: underline;
 
 
 
@@ -159,15 +165,19 @@ font-weight: initial;
       display: block;
       position: absolute;
       color: white;
-      font-size: 16px;
-      padding: 13px 10px 10px 13px;
+      font-size: 19px;
+      padding: 13px 10px 20px 5px;
+      
+      opacity: 75%;
   }
 
   .kontaktformular div{
       position: relative;
-      padding: 8px 50px 8px 214px;
+      padding: 8px 70px 0px 214px;
       margin: 1rem;
       text-align: left;
+      font-family: sans-serif;
+      
 
   }
 
@@ -176,9 +186,10 @@ font-weight: initial;
   .kontaktformular textarea{
       border: none;
       background-color: #c5c4c4;
-      padding: 16px 0px 10px 0px;
-      font-size: 20px;
-  
+      padding: 25px 70px 8px 5px;
+      font-size: 17px;
+      margin: 10px 10px 5px 0px;
+  font-family: sans-serif;
   }
 
   .button{
@@ -186,7 +197,7 @@ font-weight: initial;
       font-family: sans-serif;
       border: 0px;
       color: white;
-      background-color: #919191;
+      background-color: #6e6e6e;
       cursor: pointer;
       padding: 5px 5px 5px 5px;
   }
