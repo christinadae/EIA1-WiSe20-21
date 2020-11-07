@@ -26,8 +26,8 @@ body {
   padding: 0px 3px 0px 0px;
   background-color:rgb(236, 224, 203);
   letter-spacing: 0.3em;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 #icon {
@@ -126,31 +126,27 @@ font-weight: initial;
     text-align: left;
     opacity: 80%;
    text-decoration: underline;
-
-
-
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
-  p.small {
-    line-height: 0.8;
-  }
-  
-  p.big {
+  h6 {
+
+ 
+    font-family:sans-serif;
     line-height: 20px;
     text-align: left;
     padding: 8px 50px 8px 230px;
     letter-spacing: 0.2em;
     font-size: 20px;
-    font-weight: normal;
-    
-    
+    font-weight: normal; 
+     }
+
+
+
+   p.small {
+    line-height: 0.8;
   }
- 
-  }
+  
+
   p.solid {
     border-style: solid;
     background-color:rgba(250, 250, 250, 0.788);
@@ -160,6 +156,18 @@ font-weight: initial;
     margin: 0px 295px 0px 295px;
   }
 
+  h6 {
+
+ 
+font-family:sans-serif;
+line-height: 50px;
+text-align: left;
+padding: 5px 50px 8px 220px;
+margin: 10px;
+letter-spacing: 0.2em;
+font-size: 20px;
+font-weight: normal; 
+ }
 
 
 /*contact*/
