@@ -26,6 +26,8 @@ body {
   padding: 0px 3px 0px 0px;
   background-color:rgb(236, 224, 203);
   letter-spacing: 0.3em;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 #icon {
