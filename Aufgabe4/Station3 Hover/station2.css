@@ -12,6 +12,43 @@ font-family: sans-serif;
 
 }
 
+.stern1 {
+position: absolute;
+left: 400px;
+bottom: 230px;
+}
+.stern1:hover {
+background-image: url(https://raw.githubusercontent.com/christinadae/EIA1-WiSe20-21/main/Aufgabe4/Station3%20Hover/images/stern_hover.png);
+text-decoration: none;
+}
+.stern2 {
+position: absolute;
+left: 520px;
+top: 300px;
+}
+.stern2:hover {
+background-image: url(https://raw.githubusercontent.com/christinadae/EIA1-WiSe20-21/main/Aufgabe4/Station3%20Hover/images/stern_hover.png);
+text-decoration: none;
+}
+.stern3 {
+position: absolute;
+right: 560px;
+bottom: 190px;
+}
+.stern3:hover {
+background-image: url(https://raw.githubusercontent.com/christinadae/EIA1-WiSe20-21/main/Aufgabe4/Station3%20Hover/images/stern_hover.png);
+text-decoration: none;  
+}
+.stern4 {
+position: absolute;
+right: 410px;
+bottom: 300px;
+}
+.stern4:hover {
+background-image: url(https://raw.githubusercontent.com/christinadae/EIA1-WiSe20-21/main/Aufgabe4/Station3%20Hover/images/stern_hover.png);
+text-decoration: none; 
+}
+
 h1 {
     position: absolute;
     color: white;
