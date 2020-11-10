@@ -1,0 +1,21 @@
+body {
+    background-image: url(https://raw.githubusercontent.com/christinadae/EIA1-WiSe20-21/main/Aufgabe4/Station1/images/bg.png);
+}
+
+.wrapper {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding-top: 10%;
+
+}
+
+.plant {
+    position: absolute;
+    left: 270px;
+    top: 75px;
+}
+
+.penguin {
+    position: absolute;
+}
