@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    background-image: url(https://raw.githubusercontent.com/gabriel-rausch/EIA1-Material/master/L04/task_material/Station_9_Animation/images/bg.png);
+}
+.wrapper {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding-top: 10%;
+
+}
+.banderole {
+    position: absolute;
+    right: 342px;
+    bottom: 152px;
+}
+h1 {
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: -0.1em;
+    font-size: 42px;
+    top: 160px;
+    left: 400px;
+   font-weight: lighter;
+}
+.schnee1 {
+position: absolute;
+left: 400px;
+bottom: 380px;
+}
