@@ -18,4 +18,7 @@ body {
 
 .penguin {
     position: absolute;
+    right: 325px;
+   
+    bottom: 140px;
 }
