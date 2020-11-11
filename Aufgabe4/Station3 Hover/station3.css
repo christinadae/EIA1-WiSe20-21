@@ -24,7 +24,7 @@ font-family: sans-serif;
 .stern1 {
 position: absolute;
 left: 370px;
-bottom: 250px;
+bottom: 280px;
 }
 .stern1:hover {
 background-image: url("images/stern_hover.png");
