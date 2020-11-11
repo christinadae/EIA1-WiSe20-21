@@ -1,51 +1,60 @@
 body {
 font-family: sans-serif;
-    background-image: url(https://raw.githubusercontent.com/christinadae/EIA1-WiSe20-21/main/Aufgabe4/Station3%20Hover/images/bg2.png);
+    background-image: url("images/bg2.png");
+    position: sticky;
 }
 
+.flexbox{ 
 
-.wrapper {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    padding-top: 10%;
-
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: left;
 }
+.wrapper{
+    position: relative;
+    background-image: url("images/wrapperbg2.png");
+    top: 150px;
+    
+}
+
 
 .stern1 {
 position: absolute;
-left: 400px;
-bottom: 230px;
+left: 370px;
+bottom: 250px;
 }
 .stern1:hover {
-background-image: url(https://raw.githubusercontent.com/christinadae/EIA1-WiSe20-21/main/Aufgabe4/Station3%20Hover/images/stern_hover.png);
+background-image: url("images/stern_hover.png");
 text-decoration: none;
 }
 .stern2 {
 position: absolute;
-left: 520px;
-top: 300px;
+right: 200px;
+top: 240px;
 }
 .stern2:hover {
-background-image: url(https://raw.githubusercontent.com/christinadae/EIA1-WiSe20-21/main/Aufgabe4/Station3%20Hover/images/stern_hover.png);
+background-image: url("images/stern_hover.png");
 text-decoration: none;
 }
 .stern3 {
 position: absolute;
-right: 560px;
-bottom: 190px;
+left: 30px;
+bottom: 305px;
 }
 .stern3:hover {
-background-image: url(https://raw.githubusercontent.com/christinadae/EIA1-WiSe20-21/main/Aufgabe4/Station3%20Hover/images/stern_hover.png);
+background-image: url("images/stern_hover.png");
 text-decoration: none;  
 }
 .stern4 {
 position: absolute;
-right: 410px;
-bottom: 300px;
+right: 420px;
+bottom: 50px;
 }
 .stern4:hover {
-background-image: url(https://raw.githubusercontent.com/christinadae/EIA1-WiSe20-21/main/Aufgabe4/Station3%20Hover/images/stern_hover.png);
+background-image: url("images/stern_hover.png");
 text-decoration: none; 
 }
 
@@ -54,8 +63,8 @@ h1 {
     color: white;
     font-family: sans-serif;
     letter-spacing: -0.1em;
-    font-size: 42px;
-    top: 155px;
-    left: 400px;
+    font-size: 60px;
+    top: 50px;
+    right: 90px;
    font-weight: lighter;
 }

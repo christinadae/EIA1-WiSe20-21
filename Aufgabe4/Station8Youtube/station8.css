@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    background-image: url(https://raw.githubusercontent.com/gabriel-rausch/EIA1-Material/master/L04/task_material/Station_8_Youtube/images/bg.png);
+    position: sticky;
+}
+
+.flexbox{ 
+
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: left;
+}
+.wrapper{
+    position: relative;
+    background-image: url(https://raw.githubusercontent.com/gabriel-rausch/EIA1-Material/master/L04/task_material/Station_8_Youtube/images/wrapperbg.png);
+    top: 150px;
+    
+}
