@@ -1,18 +1,28 @@
 body {
     font-family: sans-serif;
-    background-image: url(https://raw.githubusercontent.com/gabriel-rausch/EIA1-Material/master/L04/task_material/Station_9_Animation/images/bg.png);
+    background-image: url(images/bg9.png);
     position: sticky;
 }
-.wrapper {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    padding-top: 10%;
 
+.flexbox{ 
+
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: left;
 }
+.wrapper{
+    position: relative;
+    background-image: url("images/wrapperbg9.png");
+    top: 150px;
+    
+}
+
 .banderole {
     position: absolute;
-    right: 333px;
+    right: 2px;
     bottom: -4px;
 }
 h1 {
@@ -21,54 +31,54 @@ h1 {
     font-family: sans-serif;
     letter-spacing: -0.1em;
     font-size: 60px;
-    top: 160px;
-    left: 400px;
+    top: 25px;
+    left: 80px;
    font-weight: lighter;
 }
 .schnee1{
 position: absolute;
-top: 120px;
-right: 500px;
+top: -5px;
+right: 70px;
 animation-duration: 8s;
 animation-name: slidein1;
 animation-iteration-count: infinite;
-animation-delay:0s;
+animation-delay:0.1s;
 }
 @keyframes slidein1 {from{
-top: 120px;
-left: 400px;
+top: -5px;
+left: 70px;
 opacity: 100%;
 }
 to {
-top:480px;
-left: 400px;
+top: 380px;
+left: 70px;
 opacity: 30%;
 }
 }
 .schnee3{
     position: absolute;
-    top: 120px;
-    left: 620px;
+    top: -5px;
+    left: 400px;
     animation-duration: 8s;
     animation-name: slidein3;
     animation-iteration-count: infinite;
-    animation-delay:1s;
+    animation-delay:0.9s;
     }
     @keyframes slidein3 {from{
-    top: 120px;
-    left: 620px;
+    top: -5px;
+    left: 400px;
     opacity: 100%;
     }
     to {
-    top:480px;
-    left: 620px;
+    top: 200px;
+    left: 400px;
     opacity: 55%;
     }
     }
 
 .schnee2 {
 position: absolute;
-right: 460px;
+right: 300px;
 top: 120px;
 animation-duration: 8s;
 animation-name: slidein2;
@@ -77,32 +87,33 @@ animation-delay: 0.2s;
 }
 @keyframes slidein2 {from{
     top: 120px;
-    right:460px;
+    right:300px;
     opacity:100%;
 }
 to {
-    top:410px;
-    right: 460px;
+top: 350px;
+    right: 300px;
     opacity: 40%;
 }}
 
 
 .schnee4 {
     position: absolute;
-    right: 680px;
-    top: 120px;
+    
+    top: 70px;
+    right: 80px;
     animation-duration: 8s;
     animation-name: slidein4;
     animation-iteration-count: infinite;
-    animation-delay: 0.4s;
+    animation-delay: 0.5s;
     }
     @keyframes slidein4 {from{
-        top: 120px;
-        right:680px;
+        top: 70px;
+        right:80px;
         opacity:100%;
     }
     to {
-        top:400px;
-        right: 680px;
-        opacity: 50%;
+        top:300px;
+        right: 80px;
+        opacity: 30%;
     }}
