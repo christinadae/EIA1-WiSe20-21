@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     background-image: url(https://raw.githubusercontent.com/gabriel-rausch/EIA1-Material/master/L04/task_material/Station_9_Animation/images/bg.png);
+    position: sticky;
 }
 .wrapper {
     display: flex; 
@@ -11,21 +12,97 @@ body {
 }
 .banderole {
     position: absolute;
-    right: 342px;
-    bottom: 152px;
+    right: 333px;
+    bottom: -4px;
 }
 h1 {
     position: absolute;
     color: white;
     font-family: sans-serif;
     letter-spacing: -0.1em;
-    font-size: 42px;
+    font-size: 60px;
     top: 160px;
     left: 400px;
    font-weight: lighter;
 }
-.schnee1 {
+.schnee1{
 position: absolute;
-left: 400px;
-bottom: 380px;
+top: 120px;
+right: 500px;
+animation-duration: 8s;
+animation-name: slidein1;
+animation-iteration-count: infinite;
+animation-delay:0s;
 }
+@keyframes slidein1 {from{
+top: 120px;
+left: 400px;
+opacity: 100%;
+}
+to {
+top:480px;
+left: 400px;
+opacity: 30%;
+}
+}
+.schnee3{
+    position: absolute;
+    top: 120px;
+    left: 620px;
+    animation-duration: 8s;
+    animation-name: slidein3;
+    animation-iteration-count: infinite;
+    animation-delay:1s;
+    }
+    @keyframes slidein3 {from{
+    top: 120px;
+    left: 620px;
+    opacity: 100%;
+    }
+    to {
+    top:480px;
+    left: 620px;
+    opacity: 55%;
+    }
+    }
+
+.schnee2 {
+position: absolute;
+right: 460px;
+top: 120px;
+animation-duration: 8s;
+animation-name: slidein2;
+animation-iteration-count: infinite;
+animation-delay: 0.2s;
+}
+@keyframes slidein2 {from{
+    top: 120px;
+    right:460px;
+    opacity:100%;
+}
+to {
+    top:410px;
+    right: 460px;
+    opacity: 40%;
+}}
+
+
+.schnee4 {
+    position: absolute;
+    right: 680px;
+    top: 120px;
+    animation-duration: 8s;
+    animation-name: slidein4;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s;
+    }
+    @keyframes slidein4 {from{
+        top: 120px;
+        right:680px;
+        opacity:100%;
+    }
+    to {
+        top:400px;
+        right: 680px;
+        opacity: 50%;
+    }}
