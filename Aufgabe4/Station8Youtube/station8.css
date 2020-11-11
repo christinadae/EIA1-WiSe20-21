@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-image: url(https://raw.githubusercontent.com/gabriel-rausch/EIA1-Material/master/L04/task_material/Station_8_Youtube/images/bg.png);
+    background-image: url("images/bg8.png");
     position: sticky;
 }
 
@@ -15,7 +15,7 @@ body {
 }
 .wrapper{
     position: relative;
-    background-image: url(https://raw.githubusercontent.com/gabriel-rausch/EIA1-Material/master/L04/task_material/Station_8_Youtube/images/wrapperbg.png);
+    background-image: url("images/wrapperbg8.png");
     top: 150px;
     
 }

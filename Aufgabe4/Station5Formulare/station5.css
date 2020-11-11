@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    position: sticky;
+    background-image: url("images/bg5.png");
+}
+
+
+.flexbox{ 
+
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: left;
+}
+.wrapper{
+    position: relative;
+    background-image: url("images/wrapperbg5.png");
+    top: 150px;
+    
+}
+h1 {
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+   letter-spacing: -0.07em;
+    font-weight: lighter;
+    top: 18px;
+    left: 50px;
+    font-size: 35px;
+}
+p {
+    display: block;
+    color: white;
+    margin: 20px 0px 1px 0px;
+}
+.Formular {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    top: 90px;
+    left: 50px;
+    
+   
+    
+}
+.Nachricht {
+    padding: 40px;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+label{
+    color:white;
+    display: inline;
+}
