@@ -19,3 +19,18 @@ body {
     top: 150px;
     
 }
+.christmasvideo {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    top: 40px;
+    bottom: 40px;
+}
+.banderole9 {
+    position: absolute;
+    right: 7px;
+    bottom: 2px;
+}
+img {
+    z-index: 1;
+}
