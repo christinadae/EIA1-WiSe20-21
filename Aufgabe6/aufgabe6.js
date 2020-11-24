@@ -1,7 +1,9 @@
 var europa2008 = 4965.7;
 var europa2018 = 4209.3;
+var europaWelt = Math.round(europa2018 / GesamtEmission2018 * 100);
 var nordamerika2008 = 6600.4;
 var nordamerika2018 = 6035.6;
+var nordamerikaWelt = Math.round(nordamerika2018 / GesamtEmission2018 * 100);
 var südamerika2008 = 1132.6;
 var südamerika2018 = 1261.5;
 var afrika2008 = 1028;
@@ -18,7 +20,6 @@ function functionEuropa() {
     document.querySelector("h3").innerHTML = Math.round(europa2018 / GesamtEmission2018 * 100) + "%";
     document.querySelector("h4").innerHTML = Math.round(((europa2018 / europa2008) - 1) * 100) + "%";
     document.querySelector("h5").innerHTML = Math.round(europa2018 - europa2008) + "kg CO2";
-    document.querySelector(".chart").setAttribute('style', 'height:' + Math.round(europa2018 / GesamtEmission2018 * 100) + "%");
 }
 document.querySelector(".europe").addEventListener('click', functionEuropa);
 function functionNordamerika() {
@@ -28,7 +29,6 @@ function functionNordamerika() {
     document.querySelector("h3").innerHTML = Math.round(nordamerika2018 / GesamtEmission2018 * 100) + "%";
     document.querySelector("h4").innerHTML = Math.round(((nordamerika2018 / nordamerika2008) - 1) * 100) + "%";
     document.querySelector("h5").innerHTML = Math.round(nordamerika2018 - nordamerika2008) + "kg CO2";
-    document.querySelector(".chart").setAttribute('style', 'height:' + Math.round(nordamerika2018 / GesamtEmission2018 * 100) + "%");
 }
 document.querySelector(".northamerica").addEventListener('click', functionNordamerika);
 function functionSüdamerika() {

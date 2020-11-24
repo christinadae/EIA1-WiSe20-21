@@ -1,8 +1,10 @@
 var europa2008: number = 4965.7
 var europa2018: number = 4209.3
+var europaWelt: number = Math.round(europa2018/GesamtEmission2018*100)
 
 var nordamerika2008: number = 6600.4;
-var nordamerika2018: number = 6035.6;  
+var nordamerika2018: number = 6035.6;
+var nordamerikaWelt: number = Math.round(nordamerika2018/GesamtEmission2018*100)
 
 var südamerika2008: number = 1132.6;
 var südamerika2018: number = 1261.5; 
@@ -26,10 +28,10 @@ document.querySelector("h3").innerHTML = Math.round(europa2018/GesamtEmission201
 document.querySelector("h4").innerHTML = Math.round(((europa2018/europa2008)-1)*100) +"%";
 document.querySelector("h5").innerHTML = Math.round(europa2018-europa2008) + "kg CO2";
 
-document.querySelector(".chart").setAttribute( 'style', 'height:' + Math.round(europa2018/GesamtEmission2018*100) + "%")
 
 }
 document.querySelector(".europe").addEventListener('click', functionEuropa);
+
 
 function functionNordamerika() {
     document.querySelector("h1").innerHTML ="Carbon Dioxide Emissions in North America";
@@ -40,9 +42,9 @@ function functionNordamerika() {
     document.querySelector("h5").innerHTML = Math.round(nordamerika2018-nordamerika2008) + "kg CO2";
 
 
-    document.querySelector(".chart").setAttribute( 'style', 'height:' + Math.round(nordamerika2018/GesamtEmission2018*100) + "%")
 }
 document.querySelector(".northamerica").addEventListener('click', functionNordamerika); 
+
 
 function functionSüdamerika() {
     document.querySelector("h1").innerHTML ="Carbon Dioxide Emissions in South America";
