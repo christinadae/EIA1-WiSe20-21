@@ -18,6 +18,6 @@ function functionEuropa() {
     document.querySelector("h3").innerHTML = Math.round(europa2018 / GesamtEmission2018 * 100) + "%";
     document.querySelector("h4").innerHTML = Math.round(((europa2018 / europa2008) - 1) * 100) + "%";
     document.querySelector("h5").innerHTML = Math.round(europa2018 - europa2008) + "kg CO2";
-    document.querySelector(".europe").addEventListener('click', functionEuropa);
 }
+document.querySelector(".europe").addEventListener('click', functionEuropa);
 //# sourceMappingURL=aufgabe6.js.map
