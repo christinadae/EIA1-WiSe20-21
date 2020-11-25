@@ -19,7 +19,7 @@ var australien2008: number = 1993;
 var australien2018: number = 2100.5;
 
 var GesamtEmission2018: number = europa2018 + nordamerika2018 + südamerika2018 + afrika2018 + asien2018 + australien2018;
-
+//GesamtEmission2018 = 31116.5
 
 //Europa Berechnungen
 
@@ -76,87 +76,36 @@ var australienVergleichPr: number = Math.round(((australien2018/australien2008)-
 //Growth rate between 2008 and 2018 (absolute)
 var australienVergleichW: number = Math.round(australien2018-australien2008)
 
+ 
+
+//MyFunction
+
+function myFunction(continent:string, Co2: number, Verursachung: number, Vergleich1:number, Vergleich2: number) {
 
 
-//Europa
-function functionEuropa() {
-    document.querySelector("#titleRegion").innerHTML ="Europe";
-    document.querySelector(".h2-1").innerHTML = europa2018 + "";
-    document.querySelector("p").innerHTML ="Emission absolute of Europe in 2018";
-    document.querySelector(".h2-2").innerHTML = europaVerursacht + "%";
-    document.querySelector(".h2-3").innerHTML = europaVergleichPr +"%";
-    document.querySelector(".h2-4").innerHTML = europaVergleichW + "kg CO2";
+    document.querySelector("#continent").innerHTML =  continent;
+    document.querySelector(".h2-1").innerHTML = Co2 +"";
+    document.querySelector("p").innerHTML =  "Emission absolute of" + continent + "in 2018";
+    document.querySelector(".h2-2").innerHTML = Verursachung + "%";
+    document.querySelector(".h2-3").innerHTML = Vergleich1 + "%";
+    document.querySelector(".h2-4").innerHTML = Vergleich2 + "kg";
 
-    document.querySelector(".chart").setAttribute('style', 'height:' +  europaVerursacht + "%")
+    document.querySelector(".chart").setAttribute('style', 'height:' +  Math.round((Co2/GesamtEmission2018)*100)+ "%")
+    
     }
-    document.querySelector(".europe").addEventListener('click', functionEuropa);
 
-//Nordamerika
-    function functionNordamerika() {
-    document.querySelector("#titleRegion").innerHTML ="North America";
-    document.querySelector(".h2-1").innerHTML = nordamerika2018 + "";
-    document.querySelector("p").innerHTML ="Emission absolute of North America in 2018";
-    document.querySelector(".h2-2").innerHTML = nordamerikaVerursacht + "%";
-    document.querySelector(".h2-3").innerHTML = nordamerikaVergleichPr +"%";
-    document.querySelector(".h2-4").innerHTML = nordamerikaVergleichW + "kg CO2";
+document.querySelector(".europe").addEventListener('click', myFunction.bind(null, " Europe ", europa2018, europaVerursacht, europaVergleichPr, europaVergleichW));
+document.querySelector(".northamerica").addEventListener('click', myFunction.bind(null, " North America ", nordamerika2018, nordamerikaVerursacht, nordamerikaVergleichPr, nordamerikaVergleichW));
+document.querySelector(".southamerica").addEventListener('click', myFunction.bind(null, " South America ",  südamerika2018,südamerikaVerursacht, südamerikaVergleichPr, südamerikaVergleichW));
+document.querySelector(".africa").addEventListener('click', myFunction.bind(null, " Africa ",  afrika2018, afrikaVerursacht, afrikaVergleichPr, afrikaVergleichW));
+document.querySelector(".asia").addEventListener('click', myFunction.bind(null, " Asia ",  asien2018, asienVerursacht, asienVergleichPr, asienVergleichW));
+document.querySelector(".australia").addEventListener('click', myFunction.bind(null, " Australia ",  australien2018, australienVerursacht, australienVergleichPr, australienVergleichW));
 
-    document.querySelector(".chart").setAttribute('style', 'height:' +  nordamerikaVerursacht + "%")
 
-}
-document.querySelector(".northamerica").addEventListener('click', functionNordamerika); 
 
-//Südamerika
-function functionSüdamerika() {
-    document.querySelector("#titleRegion").innerHTML ="South America";
-    document.querySelector(".h2-1").innerHTML = südamerika2018 + "";
-    document.querySelector("p").innerHTML ="Emission absolute of South America in 2018";
-    document.querySelector(".h2-2").innerHTML = südamerikaVerursacht +"%";
-    document.querySelector(".h2-3").innerHTML = südamerikaVergleichPr +"%";
-    document.querySelector(".h2-4").innerHTML = südamerikaVergleichW + "kg CO2";
-    
-    document.querySelector(".chart").setAttribute('style', 'height:' +  südamerikaVerursacht + "%")
 
- }
-document.querySelector(".southamerica").addEventListener('click', functionSüdamerika); 
 
-//Afrika
-function functionAfrika() {
-    document.querySelector("#titleRegion").innerHTML ="Africa";
-    document.querySelector(".h2-1").innerHTML = afrika2018 + "";
-    document.querySelector("p").innerHTML ="Emission absolute of Afrika in 2018";
-    document.querySelector(".h2-2").innerHTML = afrikaVerursacht +"%";
-    document.querySelector(".h2-3").innerHTML = afrikaVergleichPr +"%";
-    document.querySelector(".h2-4").innerHTML = afrikaVergleichW + "kg CO2";
 
-    document.querySelector(".chart").setAttribute('style', 'height:' +  afrikaVerursacht + "%")
- }
-document.querySelector(".africa").addEventListener('click', functionAfrika);
 
-//Asien
-function functionAsien() {
-    document.querySelector("#titleRegion").innerHTML ="Asia";
-    document.querySelector(".h2-1").innerHTML = asien2018 + "";
-    document.querySelector("p").innerHTML ="Emission absolute of Asia in 2018";
-    document.querySelector(".h2-2").innerHTML = asienVerursacht +"%";
-    document.querySelector(".h2-3").innerHTML = asienVergleichPr +"%";
-    document.querySelector(".h2-4").innerHTML = asienVergleichW + "kg CO2";
 
-    document.querySelector(".chart").setAttribute('style', 'height:' +  asienVerursacht + "%")
-    
- }
-document.querySelector(".asia").addEventListener('click', functionAsien); 
-
-//Australien
-function functionAustralien() {
-    document.querySelector("#titleRegion").innerHTML ="Australia";
-    document.querySelector(".h2-1").innerHTML = australien2018 + "";
-    document.querySelector("p").innerHTML ="Emission absolute of Australia in 2018";
-    document.querySelector(".h2-2").innerHTML = australienVerursacht +"%";
-    document.querySelector(".h2-3").innerHTML = australienVergleichPr +"%";
-    document.querySelector(".h2-4").innerHTML = australienVergleichW + "kg CO2";
-
-    document.querySelector(".chart").setAttribute('style', 'height:' +  australienVerursacht + "%")
-    
- }
-document.querySelector(".australia").addEventListener('click', functionAustralien); 
 
