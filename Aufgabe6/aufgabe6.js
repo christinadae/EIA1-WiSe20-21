@@ -62,6 +62,7 @@ function functionEuropa() {
     document.querySelector(".h2-2").innerHTML = europaVerursacht + "%";
     document.querySelector(".h2-3").innerHTML = europaVergleichPr + "%";
     document.querySelector(".h2-4").innerHTML = europaVergleichW + "kg CO2";
+    document.querySelector(".chart").setAttribute('style', 'height:' + europaVerursacht + "%");
 }
 document.querySelector(".europe").addEventListener('click', functionEuropa);
 //Nordamerika
@@ -72,6 +73,7 @@ function functionNordamerika() {
     document.querySelector(".h2-2").innerHTML = nordamerikaVerursacht + "%";
     document.querySelector(".h2-3").innerHTML = nordamerikaVergleichPr + "%";
     document.querySelector(".h2-4").innerHTML = nordamerikaVergleichW + "kg CO2";
+    document.querySelector(".chart").setAttribute('style', 'height:' + nordamerikaVerursacht + "%");
 }
 document.querySelector(".northamerica").addEventListener('click', functionNordamerika);
 //Südamerika
@@ -82,6 +84,7 @@ function functionSüdamerika() {
     document.querySelector(".h2-2").innerHTML = südamerikaVerursacht + "%";
     document.querySelector(".h2-3").innerHTML = südamerikaVergleichPr + "%";
     document.querySelector(".h2-4").innerHTML = südamerikaVergleichW + "kg CO2";
+    document.querySelector(".chart").setAttribute('style', 'height:' + südamerikaVerursacht + "%");
 }
 document.querySelector(".southamerica").addEventListener('click', functionSüdamerika);
 //Afrika
@@ -92,6 +95,7 @@ function functionAfrika() {
     document.querySelector(".h2-2").innerHTML = afrikaVerursacht + "%";
     document.querySelector(".h2-3").innerHTML = afrikaVergleichPr + "%";
     document.querySelector(".h2-4").innerHTML = afrikaVergleichW + "kg CO2";
+    document.querySelector(".chart").setAttribute('style', 'height:' + afrikaVerursacht + "%");
 }
 document.querySelector(".africa").addEventListener('click', functionAfrika);
 //Asien
@@ -102,6 +106,7 @@ function functionAsien() {
     document.querySelector(".h2-2").innerHTML = asienVerursacht + "%";
     document.querySelector(".h2-3").innerHTML = asienVergleichPr + "%";
     document.querySelector(".h2-4").innerHTML = asienVergleichW + "kg CO2";
+    document.querySelector(".chart").setAttribute('style', 'height:' + asienVerursacht + "%");
 }
 document.querySelector(".asia").addEventListener('click', functionAsien);
 //Australien
@@ -112,6 +117,7 @@ function functionAustralien() {
     document.querySelector(".h2-2").innerHTML = australienVerursacht + "%";
     document.querySelector(".h2-3").innerHTML = australienVergleichPr + "%";
     document.querySelector(".h2-4").innerHTML = australienVergleichW + "kg CO2";
+    document.querySelector(".chart").setAttribute('style', 'height:' + australienVerursacht + "%");
 }
 document.querySelector(".australia").addEventListener('click', functionAustralien);
 //# sourceMappingURL=aufgabe6.js.map
