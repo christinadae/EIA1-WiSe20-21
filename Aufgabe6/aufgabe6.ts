@@ -1,10 +1,12 @@
 
-var GesamtEmission2018: number = europa2018 + nordamerika2018 + südamerika2018 + afrika2018 + asien2018 + australien2018;
 
 var europa2008: number = 4965.7
 var europa2018: number = 4209.3
+// Relative to total world's emission
 var europaVerursacht: number = Math.round((europa2018/GesamtEmission2018)*100)
+// Growth rate between 2008 and 2018 (in %)
 var europaVergleichPr: number = Math.round (((europa2018/europa2008)-1)*100)
+//Growth rate between 2008 and 2018 (absolute)
 var europaVergleichW: number = Math.round (europa2018-europa2008)
 
 
