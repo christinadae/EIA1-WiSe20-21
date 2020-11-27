@@ -1,7 +1,8 @@
 html, body {
     font-family: sans-serif;
-    letter-spacing: 0.06em;
     color: white;
+    letter-spacing: 0.04em;
+    font-weight: lighter;
     text-align: center;
     height: 100%;
     padding: 0;
