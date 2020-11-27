@@ -19,8 +19,8 @@ var australien2008: number = 1993;
 var australien2018: number = 2100.5;
 
 var GesamtEmission2018: number = europa2018 + nordamerika2018 + südamerika2018 + afrika2018 + asien2018 + australien2018;
-//GesamtEmission2018 = 31116.5
 
+//EventListener
 window.addEventListener('load', function () {
     document.querySelector(".europe").addEventListener("click", function () {
         myFunction(" Europa ", europa2018, europa2008)
@@ -59,7 +59,7 @@ window.addEventListener('load', function () {
         });
         });
     
-//MyFunction
+//myFunction
 
 function myFunction(continent: string, Co2:number, Co2früher:number) {
    

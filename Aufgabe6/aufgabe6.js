@@ -12,7 +12,7 @@ var asien2018 = 16274.1;
 var australien2008 = 1993;
 var australien2018 = 2100.5;
 var GesamtEmission2018 = europa2018 + nordamerika2018 + südamerika2018 + afrika2018 + asien2018 + australien2018;
-//GesamtEmission2018 = 31116.5
+//EventListener
 window.addEventListener('load', function () {
     document.querySelector(".europe").addEventListener("click", function () {
         myFunction(" Europa ", europa2018, europa2008);
@@ -43,7 +43,7 @@ window.addEventListener('load', function () {
         myFunction(" Australia ", australien2018, australien2008);
     });
 });
-//MyFunction
+//myFunction
 function myFunction(continent, Co2, Co2früher) {
     document.querySelector("#continent").innerHTML = continent;
     document.querySelector(".h2-1").innerHTML = Co2 + "";
