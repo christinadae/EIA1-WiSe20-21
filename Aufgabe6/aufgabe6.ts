@@ -47,21 +47,21 @@ myFunction(" Africa ", afrika2018, afrika2008)
 
 
 window.addEventListener('load', function () {
-    document.querySelector(".asia").addEventListener("click", function () {
-    myFunction(" Asia ", asien2018, asien2008)
-    });
-    });
+document.querySelector(".asia").addEventListener("click", function () {
+myFunction(" Asia ", asien2018, asien2008)
+});
+});
 
 
-    window.addEventListener('load', function () {
-        document.querySelector(".australia").addEventListener("click", function () {
-        myFunction(" Australia ", australien2018, australien2008)
-        });
-        });
+window.addEventListener('load', function () {
+document.querySelector(".australia").addEventListener("click", function () {
+ myFunction(" Australia ", australien2018, australien2008)
+ });
+});
     
 //myFunction
 
-function myFunction(continent: string, Co2:number, Co2früher:number) {
+function myFunction(continent: string, Co2:number, Co2früher:number ) {
    
     document.querySelector("#continent").innerHTML =  continent;
     document.querySelector(".h2-1").innerHTML = Co2 +"";
@@ -70,7 +70,11 @@ function myFunction(continent: string, Co2:number, Co2früher:number) {
     document.querySelector(".h2-3").innerHTML = Math.round(((Co2/Co2früher)-1)*100) + "%";
     document.querySelector(".h2-4").innerHTML = Math.round(Co2-Co2früher) + "kg";
 
-    document.querySelector(".chart").setAttribute('style', 'height:' +  Math.round((Co2/GesamtEmission2018)*100)+ "%")
+//Balkendiagramme
 
-
+    
+    
+    document.querySelector('.chart1').setAttribute('style', 'height:' +  Math.round((Co2/GesamtEmission2018)*100)+ "%");
+    document.querySelector('.chart2').setAttribute('style', 'height:' + Math.round(((Co2/Co2früher)-1)*100) + "%");
 }
+

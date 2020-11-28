@@ -51,6 +51,8 @@ function myFunction(continent, Co2, Co2früher) {
     document.querySelector(".h2-2").innerHTML = Math.round((Co2 / GesamtEmission2018) * 100) + "%";
     document.querySelector(".h2-3").innerHTML = Math.round(((Co2 / Co2früher) - 1) * 100) + "%";
     document.querySelector(".h2-4").innerHTML = Math.round(Co2 - Co2früher) + "kg";
-    document.querySelector(".chart").setAttribute('style', 'height:' + Math.round((Co2 / GesamtEmission2018) * 100) + "%");
+    //Balkendiagramme
+    document.querySelector('.chart1').setAttribute('style', 'height:' + Math.round((Co2 / GesamtEmission2018) * 100) + "%");
+    document.querySelector('.chart2').setAttribute('style', 'height:' + Math.round(((Co2 / Co2früher) - 1) * 100) + "%");
 }
 //# sourceMappingURL=aufgabe6.js.map
