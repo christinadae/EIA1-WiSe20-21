@@ -71,10 +71,7 @@ function myFunction(continent: string, Co2:number, Co2früher:number ) {
     document.querySelector(".h2-4").innerHTML = Math.round(Co2-Co2früher) + "kg";
 
 //Balkendiagramme
-
-    
-    
-    document.querySelector('.chart1').setAttribute('style', 'height:' +  Math.round((Co2/GesamtEmission2018)*100)+ "%");
-    document.querySelector('.chart2').setAttribute('style', 'height:' + Math.round(((Co2/Co2früher)-1)*100) + "%");
+document.querySelector('.chart1').setAttribute('style', 'height:' +  Math.round((Co2/GesamtEmission2018)*100)+ "%");
+document.querySelector('.chart2').setAttribute('style', 'height:' + Math.round(((Co2/Co2früher)-1)*100) + "%");
 }
 
