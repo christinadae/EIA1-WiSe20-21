@@ -1,0 +1,99 @@
+html, body {
+    background-color: black;
+}
+
+#DrumPad {
+position: absolute;
+height: 480px;
+width: 480px;
+flex-wrap: wrap;
+background: #5c5c5c44;
+left: 30%;
+top: 5%;
+justify-content: center;
+display: flex;
+}
+
+.button1 {
+    position: relative;
+    height: 150px;
+    width:150px;
+    margin: 5px;
+    background-color: #5582b6bb;
+    border-radius: 7px;
+}
+.button2 {
+    position: relative;
+    height: 150px;
+    width:150px;
+    margin: 5px;
+    background-color: #5582b6bb;
+    border-radius: 7px;
+}
+
+.button3 {
+    position: relative;
+    height: 150px;
+    width:150px;
+    margin: 5px;
+    background-color: #5582b6bb;
+    border-radius: 7px;
+}
+
+.button4 {
+    position: relative;
+    height: 150px;
+    width:150px;
+    margin: 5px;
+    background-color: #5582b6bb;
+    border-radius: 7px;
+}
+.button5 {
+    position: relative;
+    height: 150px;
+    width:150px;
+    margin: 5px;
+    background-color: #5582b6bb;
+    border-radius: 7px;
+}
+
+.button6 {
+    position: relative;
+    height: 150px;
+    width:150px;
+    margin: 5px;
+    background-color: #5582b6bb;
+    border-radius: 7px;
+}
+
+.button7 {
+    position: relative;
+    height: 150px;
+    width:150px;
+    margin: 5px;
+    background-color: #5582b6bb;
+    border-radius: 7px;
+}
+
+.button8 {
+    position: relative;
+    height: 150px;
+    width:150px;
+    margin: 5px;
+    background-color: #5582b6bb;
+    border-radius: 7px;
+}
+
+.button9 {
+    position: relative;
+    height: 150px;
+    width:150px;
+    margin: 5px;
+    background-color: #5582b6bb;
+    border-radius: 7px;
+}
+
+
+.PlayButton{
+position: relative;
+}
