@@ -36,9 +36,18 @@ document.querySelector(".button8").addEventListener("click", function () {
 document.querySelector(".button9").addEventListener("click", function () {
     playSample(9);
 });
-// PlaySample Function
+// PlaySample Funktion
 function playSample(a) {
     button[a].play();
 }
 ;
+//PlayButton Funktion
+function PlayButton() {
+    button[1].play();
+}
+document.querySelector(".PlayButton").addEventListener("click", function () {
+    setInterval(function () {
+        PlayButton();
+    }, 500);
+});
 //# sourceMappingURL=aufgabe7.js.map
