@@ -1,16 +1,18 @@
-var sound = [];
-sound [1] = new Audio('./assets/A.mp3'); 
-sound [2] = new Audio('./assets/C.mp3'); 
-sound [3] = new Audio('./assets/F.mp3'); 
-sound [4] = new Audio('./assets/G.mp3'); 
-sound [5] = new Audio('./assets/hihat.mp3'); 
-sound [6] = new Audio('./assets/kick.mp3'); 
-sound [7] = new Audio('./assets/laugh-1.mp3'); 
-sound [8] = new Audio('./assets/laugh-2.mp3'); 
-sound [9] = new Audio('./assets/snare.mp3'); 
+var button = [];
+button [1] = new Audio('./assets/A.mp3'); 
+button [2] = new Audio('./assets/C.mp3'); 
+button [3] = new Audio('./assets/F.mp3'); 
+button [4] = new Audio('./assets/G.mp3'); 
+button [5] = new Audio('./assets/hihat.mp3'); 
+button [6] = new Audio('./assets/kick.mp3'); 
+button [7] = new Audio('./assets/laugh-1.mp3'); 
+button [8] = new Audio('./assets/laugh-2.mp3'); 
+button [9] = new Audio('./assets/snare.mp3'); 
 
 // Event-Listener für Sounds
 
+
+  
 document.querySelector(".button1").addEventListener("click", function () {
     playSample(1);
 });
@@ -48,6 +50,6 @@ document.querySelector(".button9").addEventListener("click", function () {
 });
 
 // PlaySample Function
-  function playSample(b) {
-    sound[b].play();
-  };
+function playSample(a) {
+button[a].play();
+};
