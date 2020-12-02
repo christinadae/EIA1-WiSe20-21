@@ -10,9 +10,6 @@ button [8] = new Audio('./assets/laugh-2.mp3');
 button [9] = new Audio('./assets/snare.mp3'); 
 
 // Event-Listener für Sounds
-
-
-  
 document.querySelector(".button1").addEventListener("click", function () {
     playSample(1);
 });

@@ -1,5 +1,5 @@
 html, body {
-    background-color: black;
+    background-color: #383838;
 }
 
 #DrumPad {
@@ -7,7 +7,7 @@ position: absolute;
 height: 480px;
 width: 480px;
 flex-wrap: wrap;
-background: #5c5c5c44;
+background: #383838;
 left: 30%;
 top: 5%;
 justify-content: center;
@@ -19,15 +19,17 @@ display: flex;
     height: 150px;
     width:150px;
     margin: 5px;
-    background-color: #5582b6bb;
+    background: linear-gradient(to top, #315057, #708e94);
     border-radius: 7px;
+    
+    
 }
 .button2 {
     position: relative;
     height: 150px;
     width:150px;
     margin: 5px;
-    background-color: #5582b6bb;
+    background: linear-gradient(to top,#51747c, #90b7c0);
     border-radius: 7px;
 }
 
@@ -36,7 +38,7 @@ display: flex;
     height: 150px;
     width:150px;
     margin: 5px;
-    background-color: #5582b6bb;
+    background: linear-gradient(to top, #536f74, #b1d1d6);
     border-radius: 7px;
 }
 
@@ -45,7 +47,7 @@ display: flex;
     height: 150px;
     width:150px;
     margin: 5px;
-    background-color: #5582b6bb;
+    background: linear-gradient(to top,#947e8a ,#ecd0df ) ;
     border-radius: 7px;
 }
 .button5 {
@@ -53,7 +55,7 @@ display: flex;
     height: 150px;
     width:150px;
     margin: 5px;
-    background-color: #5582b6bb;
+    background: linear-gradient(to top,#886073 , #d3acbe) ;
     border-radius: 7px;
 }
 
@@ -62,7 +64,7 @@ display: flex;
     height: 150px;
     width:150px;
     margin: 5px;
-    background-color: #5582b6bb;
+    background: linear-gradient(to top,#753e58, #be96aa) ;
     border-radius: 7px;
 }
 
@@ -71,7 +73,7 @@ display: flex;
     height: 150px;
     width:150px;
     margin: 5px;
-    background-color: #5582b6bb;
+    background:linear-gradient(to top,#c0a859,#ffefce ) ;
     border-radius: 7px;
 }
 
@@ -80,7 +82,7 @@ display: flex;
     height: 150px;
     width:150px;
     margin: 5px;
-    background-color: #5582b6bb;
+    background: linear-gradient(to top,#b1714c,#ffd7c1) ;
     border-radius: 7px;
 }
 
@@ -89,7 +91,7 @@ display: flex;
     height: 150px;
     width:150px;
     margin: 5px;
-    background-color: #5582b6bb;
+    background: linear-gradient(to top,#914949,#e4b7b7) ;
     border-radius: 7px;
 }
 
