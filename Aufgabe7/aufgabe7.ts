@@ -1,3 +1,4 @@
+// Array Buttons
 var button = [];
 button [1] = new Audio('./assets/A.mp3'); 
 button [2] = new Audio('./assets/C.mp3'); 
@@ -51,18 +52,30 @@ function playSample(a) {
 button[a].play();
 };
 
-//PlayButton Funktion
-
-function PlayButton () {
-button[1].play();
 
 
 
+    
 
-}
+// Array Beat
+var Beat = [];
+Beat [2] = new Audio('./assets/kick.mp3');
+Beat [1] = new Audio('./assets/hihat.mp3'); 
+Beat [3] = new Audio('./assets/snare.mp3'); 
+
 
 document.querySelector(".PlayButton").addEventListener("click", function() {
-setInterval(function() {PlayButton()
-},500);
-    
-});
+    DrumMaschine();
+});  
+//PlayButton Funktion
+function DrumMaschine () {
+setInterval(function () {
+Beat [3].play(); 
+Beat [2].play();
+Beat [1].play();
+
+
+}, 500);}
+
+
+
