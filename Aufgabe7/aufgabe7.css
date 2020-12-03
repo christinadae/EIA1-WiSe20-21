@@ -14,6 +14,7 @@ justify-content: center;
 display: flex;
 }
 
+
 .button1 {
     position: relative;
     height: 150px;
@@ -21,8 +22,9 @@ display: flex;
     margin: 5px;
     background: linear-gradient(to top, #315057, #708e94);
     border-radius: 7px;
-    
-    
+}
+.button1:hover {
+    opacity: 0.8;
 }
 .button2 {
     position: relative;
@@ -31,6 +33,9 @@ display: flex;
     margin: 5px;
     background: linear-gradient(to top,#51747c, #90b7c0);
     border-radius: 7px;
+}
+.button2:hover {
+    opacity: 0.8;
 }
 
 .button3 {
@@ -41,7 +46,9 @@ display: flex;
     background: linear-gradient(to top, #536f74, #b1d1d6);
     border-radius: 7px;
 }
-
+.button3:hover {
+    opacity: 0.8;
+}
 .button4 {
     position: relative;
     height: 150px;
@@ -49,6 +56,9 @@ display: flex;
     margin: 5px;
     background: linear-gradient(to top,#947e8a ,#ecd0df ) ;
     border-radius: 7px;
+}
+.button4:hover {
+    opacity: 0.8;
 }
 .button5 {
     position: relative;
@@ -58,7 +68,9 @@ display: flex;
     background: linear-gradient(to top,#886073 , #d3acbe) ;
     border-radius: 7px;
 }
-
+.button5:hover {
+    opacity: 0.8;
+}
 .button6 {
     position: relative;
     height: 150px;
@@ -67,7 +79,9 @@ display: flex;
     background: linear-gradient(to top,#753e58, #be96aa) ;
     border-radius: 7px;
 }
-
+.button6:hover {
+    opacity: 0.8;
+}
 .button7 {
     position: relative;
     height: 150px;
@@ -76,7 +90,9 @@ display: flex;
     background:linear-gradient(to top,#c0a859,#ffefce ) ;
     border-radius: 7px;
 }
-
+.button7:hover {
+    opacity: 0.8;
+}
 .button8 {
     position: relative;
     height: 150px;
@@ -85,7 +101,9 @@ display: flex;
     background: linear-gradient(to top,#b1714c,#ffd7c1) ;
     border-radius: 7px;
 }
-
+.button8:hover {
+    opacity: 0.8;
+}
 .button9 {
     position: relative;
     height: 150px;
@@ -94,8 +112,16 @@ display: flex;
     background: linear-gradient(to top,#914949,#e4b7b7) ;
     border-radius: 7px;
 }
+.button9:hover {
+    opacity: 0.8;
+}
 
-
-#PlayButton{
+.PlayButton{
 position: relative;
+
+}
+
+.PlayButton:hover {
+    opacity: 0.5;
+    transition-duration: 0.5s;
 }

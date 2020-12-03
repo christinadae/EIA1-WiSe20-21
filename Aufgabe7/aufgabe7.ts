@@ -62,6 +62,8 @@ var Beat = [];
 Beat [2] = new Audio('./assets/kick.mp3');
 Beat [1] = new Audio('./assets/hihat.mp3'); 
 Beat [3] = new Audio('./assets/snare.mp3'); 
+Beat [4] = new Audio('./assets/A.mp3'); 
+
 
 
 document.querySelector(".PlayButton").addEventListener("click", function() {
@@ -72,7 +74,9 @@ function DrumMaschine () {
 setInterval(function () {
 Beat [3].play(); 
 Beat [2].play();
+Beat [4].play();
 Beat [1].play();
+
 
 
 }, 500);}
