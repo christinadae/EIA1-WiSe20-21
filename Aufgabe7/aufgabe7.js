@@ -44,18 +44,17 @@ function playSample(a) {
 ;
 // Array Beat
 var Beat = [];
-Beat[1] = new Audio('./assets/hihat.mp3');
+Beat[0] = new Audio('./assets/kick.mp3');
+Beat[1] = new Audio('./assets/snare.mp3');
 Beat[2] = new Audio('./assets/kick.mp3');
-Beat[3] = new Audio('./assets/snare.mp3');
-var index = 1;
+;
+Beat[3] = new Audio('./assets/hihat.mp3');
+var index = 0;
+// Event-Listener für PlayButton
 document.querySelector(".PlayButton").addEventListener("click", function () {
-    DrumMaschine();
-});
-//PlayButton Funktion
-function DrumMaschine() {
     setInterval(function () {
-        index = index + 1;
         Beat[index].play();
-    }, 500);
-}
+        index = index + 1;
+    }, 400);
+});
 //# sourceMappingURL=aufgabe7.js.map

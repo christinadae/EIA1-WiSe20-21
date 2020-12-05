@@ -54,26 +54,28 @@ button[a].play();
 
 // Array Beat
 var Beat = [];
-Beat [1] = new Audio('./assets/hihat.mp3'); 
-Beat [2] = new Audio('./assets/kick.mp3');
-Beat [3] = new Audio('./assets/snare.mp3'); 
-
-var index = 1; 
-
-document.querySelector(".PlayButton").addEventListener("click", function() {
-    DrumMaschine();
-});  
+Beat [0] = new Audio('./assets/kick.mp3');
+Beat [1] = new Audio('./assets/snare.mp3');
+Beat [2] = new Audio('./assets/kick.mp3');; 
+Beat [3] = new Audio('./assets/hihat.mp3'); 
 
 
+var index = 0
 
-//PlayButton Funktion
-function DrumMaschine () {
-setInterval(function () {
-index=index+1;
-Beat[index].play();
+// Event-Listener für PlayButton
 
-},500);
-}
+document.querySelector(".PlayButton").addEventListener("click", function () {
+    setInterval(function () {
+        Beat[index].play();
+        index = index + 1;
+    }, 400);
+});
+
+
+
+
+
+
 
 
 
