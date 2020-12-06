@@ -44,17 +44,24 @@ function playSample(a) {
 ;
 // Array Beat
 var Beat = [];
-Beat[0] = new Audio('./assets/kick.mp3');
-Beat[1] = new Audio('./assets/snare.mp3');
-Beat[2] = new Audio('./assets/kick.mp3');
-;
-Beat[3] = new Audio('./assets/hihat.mp3');
+Beat[0] = new Audio('./assets/A.mp3');
+Beat[1] = new Audio('./assets/A.mp3');
+Beat[2] = new Audio('./assets/A.mp3');
+Beat[3] = new Audio('./assets/A.mp3');
+Beat[4] = new Audio('./assets/C.mp3');
+Beat[5] = new Audio('./assets/F.mp3');
+Beat[6] = new Audio('./assets/G.mp3');
+Beat[7] = new Audio('./assets/A.mp3');
+Beat[8] = new Audio('./assets/kick.mp3');
+Beat[9] = new Audio('./assets/snare.mp3');
+Beat[10] = new Audio('./assets/hihat.mp3');
+Beat[11] = new Audio('./assets/laugh-2.mp3');
 var index = 0;
 // Event-Listener für PlayButton
 document.querySelector(".PlayButton").addEventListener("click", function () {
     setInterval(function () {
         Beat[index].play();
         index = index + 1;
-    }, 400);
+    }, 600);
 });
 //# sourceMappingURL=aufgabe7.js.map
