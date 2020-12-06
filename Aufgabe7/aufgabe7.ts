@@ -65,7 +65,7 @@ Beat [7] = new Audio('./assets/A.mp3');
 Beat [8] = new Audio('./assets/kick.mp3');
 Beat [9] = new Audio('./assets/snare.mp3');
 Beat [10] = new Audio('./assets/hihat.mp3'); 
-Beat [11] = new Audio('./assets/laugh-2.mp3'); 
+
 
 
 var index = 0
