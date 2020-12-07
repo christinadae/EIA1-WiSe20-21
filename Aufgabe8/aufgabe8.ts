@@ -1,14 +1,14 @@
 // Array Buttons
 var button = [];
-button [1] = new Audio('./assets/A.mp3'); 
-button [2] = new Audio('./assets/C.mp3'); 
-button [3] = new Audio('./assets/F.mp3'); 
-button [4] = new Audio('./assets/G.mp3'); 
-button [5] = new Audio('./assets/hihat.mp3'); 
-button [6] = new Audio('./assets/kick.mp3'); 
-button [7] = new Audio('./assets/laugh-1.mp3'); 
-button [8] = new Audio('./assets/laugh-2.mp3'); 
-button [9] = new Audio('./assets/snare.mp3'); 
+button [1] = new Audio("./assets/A.mp3"); 
+button [2] = new Audio("./assets/C.mp3"); 
+button [3] = new Audio("./assets/F.mp3"); 
+button [4] = new Audio("./assets/G.mp3"); 
+button [5] = new Audio("./assets/hihat.mp3"); 
+button [6] = new Audio("./assets/kick.mp3"); 
+button [7] = new Audio("./assets/laugh-1.mp3"); 
+button [8] = new Audio("./assets/laugh-2.mp3"); 
+button [9] = new Audio("./assets/snare.mp3"); 
 
 // Event-Listener für Sounds
 document.querySelector(".button1").addEventListener("click", function () {
@@ -47,7 +47,7 @@ document.querySelector(".button9").addEventListener("click", function () {
     playSample(9);
 });
 
-//Funktion PlaySample
+// PlaySample Funktion
 function playSample(a) {
 button[a].play();
 };
@@ -68,24 +68,17 @@ Beat [10] = new Audio("./assets/hihat.mp3");
 Beat [11] = new Audio("./assets/laugh-2.mp3"); 
 
 
-var index = 0
+var index = 0;
+var BeatsTotal: number = 11; 
+
 
 // Event-Listener für PlayButton
 
 document.querySelector(".PlayButton").addEventListener("click", function () {
     setInterval(function () {
-        Beat[index].play();
-        index = index + 1;
-        
+        for (var index = 0; index <= BeatsTotal; index++) {
+           Beat[index].play();
+        }
     }, 600);
+
 });
-
-
-
-
-
-
-
-
-
-

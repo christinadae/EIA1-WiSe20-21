@@ -1,0 +1,5 @@
+setInterval(function () {
+Beat[index].play();
+index = index + 1;
+setInterval(function () {  
+    }, 600);
