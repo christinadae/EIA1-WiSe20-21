@@ -3,3 +3,25 @@ Beat[index].play();
 index = index + 1;
 setInterval(function () {  
     }, 600);
+
+
+
+    Beat [0] = new Audio("./assets/A.mp3"); 
+Beat [1] = new Audio("./assets/A.mp3"); 
+Beat [2] = new Audio("./assets/A.mp3"); 
+Beat [3] = new Audio("./assets/A.mp3"); 
+Beat [4] = new Audio("./assets/C.mp3"); 
+Beat [5] = new Audio("./assets/F.mp3"); 
+Beat [6] = new Audio("./assets/G.mp3"); 
+Beat [7] = new Audio("./assets/A.mp3");
+
+
+.StopButton {
+    position: relative;
+    color: #a8a8a8;
+    font-size: 80px;
+    left: 0%;
+    margin: 4%;  
+   
+  
+}
