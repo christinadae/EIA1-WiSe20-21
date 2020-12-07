@@ -16,12 +16,3 @@ Beat [6] = new Audio("./assets/G.mp3");
 Beat [7] = new Audio("./assets/A.mp3");
 
 
-.StopButton {
-    position: relative;
-    color: #a8a8a8;
-    font-size: 80px;
-    left: 0%;
-    margin: 4%;  
-   
-  
-}

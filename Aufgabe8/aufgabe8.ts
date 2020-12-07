@@ -73,3 +73,7 @@ document.querySelector(".PlayButton").addEventListener("click", function () {
     }, 600);
 
 });
+
+var PlayButton = document.querySelector(".PlayButton");
+var StopButton = document.querySelector(".StopButton");
+
