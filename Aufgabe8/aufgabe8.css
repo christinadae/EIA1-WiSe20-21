@@ -115,8 +115,7 @@ display: flex;
 .button9:hover {
     opacity: 0.8;
 }
-
-.PlayButton{
+#playButton{
 position: relative;
 color: #a8a8a8;
 font-size: 80px;
@@ -125,19 +124,24 @@ margin: 4%;
 
 }
 
-.PlayButton:hover {
+#playButton:hover {
     color: #e9e9e9;
     transition-duration: 0.3s;
 }
-.StopButton {
+.is-hidden {
+    display: none !important;
+}
+
+#stopButton {
     position: relative;
     color: #a8a8a8;
     font-size: 80px;
+    left: -4%;
     margin: 4%;  
 }
 
 
-.RecordButton {
+#recordButton {
     position: relative;
     color: #a8a8a8;
     font-size: 80px;
@@ -145,12 +149,12 @@ margin: 4%;
     margin: 4%;
 }
 
-.RecordButton:hover {
-    color: #e9e9e9;
+#recordButton:hover {
+   color: #e9e9e9;
     transition-duration: 0.3s;
 }
 
-.DeleteButton {
+#deleteButton {
     position: relative;
     color: #a8a8a8;
     font-size: 80px;
@@ -158,7 +162,7 @@ margin: 4%;
     margin: 4%;
 }
 
-.DeleteButton:hover {
+#deleteButton:hover {
     color: #e9e9e9;
     transition-duration: 0.3s;
 }

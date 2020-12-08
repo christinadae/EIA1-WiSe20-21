@@ -16,3 +16,34 @@ Beat [6] = new Audio("./assets/G.mp3");
 Beat [7] = new Audio("./assets/A.mp3");
 
 
+.StopButton {
+    position: relative;
+    color: #a8a8a8;
+    font-size: 80px;
+    margin: 4%;  
+}
+.stopButton {
+    position: relative;
+    color: #a8a8a8;
+    font-size: 80px;
+    margin: 4%;  
+}
+ position: relative;
+    color: #a8a8a8;
+    font-size: 80px;
+    margin: 4%;  
+
+
+    document.querySelector(".playButton").addEventListener("click", function (): void {
+    document.querySelector(".playButton").classList.add("is-hidden");
+    document.querySelector(".stopButton").classList.remove("is-hidden");
+    });
+
+    document.querySelector(".playButton").addEventListener("click", function (): void {
+    setInterval(function () {
+        for (var index: number = 0; index <= Beat.length; index++) {
+           Beat[index].play();
+        }
+    }, 600);
+
+});

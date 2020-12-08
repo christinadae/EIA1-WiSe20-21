@@ -11,34 +11,34 @@ button[8] = new Audio('./assets/laugh-2.mp3');
 button[9] = new Audio('./assets/snare.mp3');
 // Event-Listener für Sounds
 document.querySelector(".button1").addEventListener("click", function () {
-    playSample(1);
+    playsample(1);
 });
 document.querySelector(".button2").addEventListener("click", function () {
-    playSample(2);
+    playsample(2);
 });
 document.querySelector(".button3").addEventListener("click", function () {
-    playSample(3);
+    playsample(3);
 });
 document.querySelector(".button4").addEventListener("click", function () {
-    playSample(4);
+    playsample(4);
 });
 document.querySelector(".button5").addEventListener("click", function () {
-    playSample(5);
+    playsample(5);
 });
 document.querySelector(".button6").addEventListener("click", function () {
-    playSample(6);
+    playsample(6);
 });
 document.querySelector(".button7").addEventListener("click", function () {
-    playSample(7);
+    playsample(7);
 });
 document.querySelector(".button8").addEventListener("click", function () {
-    playSample(8);
+    playsample(8);
 });
 document.querySelector(".button9").addEventListener("click", function () {
-    playSample(9);
+    playsample(9);
 });
 //Funktion PlaySample
-function playSample(a) {
+function playsample(a) {
     button[a].play();
 }
 ;
