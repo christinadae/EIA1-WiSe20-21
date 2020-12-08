@@ -39,11 +39,36 @@ Beat [7] = new Audio("./assets/A.mp3");
     document.querySelector(".stopButton").classList.remove("is-hidden");
     });
 
-    document.querySelector(".playButton").addEventListener("click", function (): void {
-    setInterval(function () {
-        for (var index: number = 0; index <= Beat.length; index++) {
-           Beat[index].play();
-        }
-    }, 600);
 
+<div class="stopButton">
+<i class="fas fa-stop is-hidden"></i>
+</div>
+
+
+
+play.addEventListener("click", function (): void {
+    // tslint:disable-next-line: typedef
+    setInterval(function () {
+        for (var index: number = 0; index <= sample.length; index++) {
+           sample[index].play();
+        }
+    },          600);
+
+});
+
+
+document.getElementById("playButton").addEventListener("click", function (): void {
+    // tslint:disable-next-line: typedef
+    setInterval(function () {
+        for (var index: number = 0; index <= sample.length; index++) {
+           sample[index].play();
+        }
+    },          600);
+
+});
+
+stoppen.addEventListener("click", function(): void {
+    sample.splice(0, 1, 2, 3);
+    
+    
 });

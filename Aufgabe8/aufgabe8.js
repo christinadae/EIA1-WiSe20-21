@@ -61,17 +61,22 @@ sample[1] = new Audio("./assets/snare.mp3");
 sample[2] = new Audio("./assets/hihat.mp3");
 sample[3] = new Audio("./assets/laugh-2.mp3");
 var index = 0;
+var intervall;
+var play = document.getElementById("playButton");
+var stoppen = document.getElementById("stopButton");
 // Event-Listener für PlayButton
-document.getElementById("playButton").addEventListener("click", function () {
+stoppen.addEventListener("click", function () {
+    clearInterval(intervall);
+});
+play.addEventListener("click", function () {
     // tslint:disable-next-line: typedef
-    setInterval(function () {
+    intervall = setInterval(function () {
         for (var index = 0; index <= sample.length; index++) {
             sample[index].play();
         }
     }, 600);
 });
-var play = document.getElementById("playButton");
-var stoppen = document.getElementById("stopButton");
+// Funktion und Eventlistener für Play/Stop Button
 play.addEventListener("click", function () {
     this.classList.add("is-hidden");
     stoppen.classList.remove("is-hidden");

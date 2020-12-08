@@ -75,21 +75,30 @@ sample [2] = new Audio("./assets/hihat.mp3");
 sample [3] = new Audio("./assets/laugh-2.mp3"); 
 
 
-var index: number = 0; 
-
-// Event-Listener für PlayButton
-document.getElementById("playButton").addEventListener("click", function (): void {
-    // tslint:disable-next-line: typedef
-    setInterval(function () {
-        for (var index: number = 0; index <= sample.length; index++) {
-           sample[index].play();
-        }
-    },          600);
-
-});
+var index: number = 0;
+var intervall: number; 
 
 const play: HTMLElement = document.getElementById("playButton");
 const stoppen: HTMLElement = document.getElementById("stopButton");
+
+// Event-Listener für PlayButton
+stoppen.addEventListener("click", function(): void {
+clearInterval(intervall);
+
+});
+
+play.addEventListener("click", function (): void {
+    // tslint:disable-next-line: typedef
+    intervall = setInterval(function () {
+        for (var index: number = 0; index <= sample.length; index++) {
+           sample[index].play();
+        }
+    },                      600);
+
+});
+
+
+// Funktion und Eventlistener für Play/Stop Button
 
 play.addEventListener("click", function (): void {
 this.classList.add("is-hidden");
@@ -101,12 +110,14 @@ stoppen.addEventListener("click", function (): void {
     play.classList.remove("is-hidden");
 });
 
-
-
 function playstop(first: HTMLElement, second: HTMLElement): void {
 first.classList.add(".is-hidden");
 second.classList.remove(".is-hiden");
 }
+
+
+
+
 
 
 
