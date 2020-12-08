@@ -64,10 +64,11 @@ var index = 0;
 var intervall;
 var play = document.getElementById("playButton");
 var stoppen = document.getElementById("stopButton");
-// Event-Listener für PlayButton
+// Event-Listener für StopButton
 stoppen.addEventListener("click", function () {
     clearInterval(intervall);
 });
+// Event-Listener für PlayButton
 play.addEventListener("click", function () {
     // tslint:disable-next-line: typedef
     intervall = setInterval(function () {

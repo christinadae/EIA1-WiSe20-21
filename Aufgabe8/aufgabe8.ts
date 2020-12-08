@@ -81,12 +81,12 @@ var intervall: number;
 const play: HTMLElement = document.getElementById("playButton");
 const stoppen: HTMLElement = document.getElementById("stopButton");
 
-// Event-Listener für PlayButton
+// Event-Listener für StopButton
 stoppen.addEventListener("click", function(): void {
 clearInterval(intervall);
 
 });
-
+// Event-Listener für PlayButton
 play.addEventListener("click", function (): void {
     // tslint:disable-next-line: typedef
     intervall = setInterval(function () {
