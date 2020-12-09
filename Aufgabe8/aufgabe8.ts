@@ -103,6 +103,7 @@ aufnehmen.addEventListener("click", function (): void {
         aufnehmen.classList.add(".active");
         recordactive = true; 
     }
+    // tslint:disable-next-line: no-unused-expression
     recordBeat(x);
 });
 
