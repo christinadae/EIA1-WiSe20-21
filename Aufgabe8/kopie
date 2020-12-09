@@ -72,3 +72,77 @@ stoppen.addEventListener("click", function(): void {
     
     
 });
+
+
+
+const createBeat: HTMLAudioElement [] = [];
+
+
+
+aufnehmen.addEventListener("click", function (): void {
+playstop(this, aufnehmenstopp);
+record = true;
+});
+
+aufnehmenstopp.addEventListener("click", function(): void {
+ playstop(this, aufnehmen);
+ record = false;   
+});
+
+
+// tslint:disable-next-line: typedef
+function createBeat (x): void {
+if (record == true)
+button.push(x);
+}
+
+function createBeatPlay () {
+    if 
+}
+
+button [1] = new Audio("./assets/A.mp3"); 
+button [2] = new Audio("./assets/C.mp3"); 
+button [3] = new Audio("./assets/F.mp3"); 
+button [4] = new Audio("./assets/G.mp3"); 
+button [5] = new Audio("./assets/hihat.mp3"); 
+button [6] = new Audio("./assets/kick.mp3"); 
+button [7] = new Audio("./assets/laugh-1.mp3"); 
+button [8] = new Audio("./assets/laugh-2.mp3"); 
+button [9] = new Audio("./assets/snare.mp3"); 
+
+
+var sample = [];
+
+sample [0] = new Audio("./assets/kick.mp3");
+sample [1] = new Audio("./assets/snare.mp3");
+sample [2] = new Audio("./assets/hihat.mp3"); 
+
+
+var button1: HTMLAudioElement = new Audio("assets/A.mp3");
+var button2: HTMLAudioElement = new Audio("assets/C.mp3");
+var button3: HTMLAudioElement = new Audio("assets/F.mp3");
+var button4: HTMLAudioElement = new Audio("assets/G.mp3");
+var button5: HTMLAudioElement = new Audio("assets/hihat.mp3");
+var button6: HTMLAudioElement = new Audio("assets/kick.mp3");
+var button7: HTMLAudioElement = new Audio("assets/laugh-1.mp3");
+var button8: HTMLAudioElement = new Audio("assets/laugh-2.mp3");
+var button9: HTMLAudioElement = new Audio("assets/snare.mp3");
+
+
+  intervall = setInterval(function () {
+        if (x < sample.length) {
+            playSample(sample[x]);
+            x++;
+        }
+    },         
+
+
+    play.addEventListener("click", function (): void {
+// tslint:disable-next-line: typedef
+intervall = setInterval(function () {
+        // tslint:disable-next-line: typedef
+        for (index; index < sample.length; index++) {
+            sample[index].play();
+        }
+    },                  600);
+});
