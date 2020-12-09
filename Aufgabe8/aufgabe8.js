@@ -1,6 +1,5 @@
 // Array Buttons
 // tslint:disable-next-line: typedef
-// tslint:disable-next-line: typedef
 var button = [];
 button[1] = new Audio("./assets/A.mp3");
 button[2] = new Audio("./assets/C.mp3");
@@ -54,16 +53,17 @@ function playSample(x) {
     x.play();
 }
 // Array Beat
-// tslint:disable-next-line: variable-name
 // tslint:disable-next-line: typedef
-// tslint:disable-next-line: typedef
-var sample = [5, 6, 9];
+var sample = [];
+sample[0] = new Audio("./assets/hihat.mp3");
+sample[1] = new Audio("./assets/kick.mp3");
+sample[2] = new Audio("./assets/snare.mp3");
 // tslint:disable-next-line: typedef
 var index = 0;
 var intervall;
 var record;
 // tslint:disable-next-line: typedef
-var x;
+var x = 0;
 // Variablen Definition für die Buttons
 var play = document.getElementById("playButton");
 var stoppen = document.getElementById("stopButton");
@@ -75,33 +75,20 @@ stoppen.addEventListener("click", function () {
     clearInterval(intervall);
 });
 // Event-Listener für PlayButton
-// Klick auf PlayButton wird zu StopButton und andersrum
 play.addEventListener("click", function () {
-    playandstop(true);
+    PlayBeat(true);
     this.classList.add("is-hidden");
     stoppen.classList.remove("is-hidden");
 });
+// Klick auf PlayButton wird zu StopButton und andersrum
 stoppen.addEventListener("click", function () {
-    playandstop(false);
+    PlayBeat(false);
     this.classList.add("is-hidden");
     play.classList.remove("is-hidden");
 });
 function playstop(first, second) {
     first.classList.add(".is-hidden");
     second.classList.remove(".is-hiden");
-}
-// Funktion fürs Löschen
-löschen.addEventListener("click", function () {
-    deleteBeat();
-});
-// tslint:disable-next-line: typedef
-function deleteBeat() {
-    sample.splice(0, sample.length);
-}
-// Funktion fürs Aufnehmen
-// tslint:disable-next-line: typedef
-function recordBeat() {
-    sample.push();
 }
 // Klick auf RecordButton
 aufnehmen.addEventListener("click", function () {
@@ -115,7 +102,7 @@ aufnehmenstopp.addEventListener("click", function () {
 });
 // Funktion PlayStop
 // tslint:disable-next-line: typedef
-function playandstop(a) {
+function PlayBeat(a) {
     if (a == true) {
         // tslint:disable-next-line: typedef
         intervall = setInterval(function () {
@@ -131,5 +118,18 @@ function playandstop(a) {
     else {
         clearInterval(intervall);
     }
+}
+// Funktion fürs Löschen
+löschen.addEventListener("click", function () {
+    deleteBeat();
+});
+// tslint:disable-next-line: typedef
+function deleteBeat() {
+    sample.splice(0, sample.length);
+}
+// Funktion fürs Aufnehmen
+// tslint:disable-next-line: typedef
+function recordBeat() {
+    sample.push();
 }
 //# sourceMappingURL=aufgabe8.js.map
