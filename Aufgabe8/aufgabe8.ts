@@ -93,6 +93,24 @@ var aufnehmen: HTMLElement = document.getElementById("recordButton");
 var aufnehmenstopp: HTMLElement = document.getElementById("whileRecord");
 var löschen: HTMLElement = document.getElementById("deleteButton");
 
+// Klick auf RecordButton
+aufnehmen.addEventListener("click", function (): void {
+    if (aufnehmen.classList.contains(".active")) {
+        aufnehmen.classList.remove(".active");
+        recordactive = false;
+    }
+    else {
+        aufnehmen.classList.add(".active");
+        recordactive = true; 
+    }
+    recordBeat(x);
+});
+
+// Löscht den aktuell definierten Beat
+löschen.addEventListener("click", function (): void {
+    deleteBeat();
+    });
+
 // Klick auf PlayButton wird zu StopButton und andersrum
 play.addEventListener("click", function (): void {
     PlayBeat(true);
@@ -105,25 +123,25 @@ stoppen.addEventListener("click", function (): void {
     this.classList.add("is-hidden");
     play.classList.remove("is-hidden");
 });
+    
 
-// Klick auf RecordButton
+// Funktion fürs Aufnehmen
 
-aufnehmen.addEventListener("click", function (): void {
-    if (aufnehmen.classList.contains(".active")) {
-        aufnehmen.classList.remove(".active");
-        recordactive = false;
-    }
-    else {
-        aufnehmen.classList.add(".active");
-        recordactive = true; 
-    }
-    recordBeat(x);
-});
-   
+// tslint:disable-next-line: typedef
+function recordBeat (x) {
+    if (recordactive == true) {
+    sample.push(x);
+}
+}
+// Funktion fürs Löschen
+function deleteBeat(): void {
+sample.splice(0, sample.length);
+}
+    
 // Funktion Play and Stop
 
 // tslint:disable-next-line: typedef
-function PlayBeat(a) {
+function PlayBeat(a): void {
     if (a == true) {
         // tslint:disable-next-line: typedef
         intervall = setInterval(function (): void {
@@ -141,26 +159,6 @@ function PlayBeat(a) {
     }}
 
 
-// Löscht den aktuell definierten Beat
-löschen.addEventListener("click", function (): void {
-deleteBeat();
-});
-
-// Funktion fürs Aufnehmen
-
-// tslint:disable-next-line: typedef
-function recordBeat (x) {
-if (recordactive == true) {
-sample.push(x);
-
-}
-}
-
-// Funktion fürs Löschen
-// tslint:disable-next-line: typedef
-function deleteBeat () {
-    sample.splice(0, sample.length);
-    }
 
 
 
