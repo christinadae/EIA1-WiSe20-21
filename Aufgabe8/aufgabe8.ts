@@ -77,11 +77,18 @@ sample [3] = new Audio("./assets/laugh-2.mp3");
 
 var index: number = 0;
 var intervall: number; 
+var record: boolean = false;
+
+// Variablen Definition für die Buttons
 
 const play: HTMLElement = document.getElementById("playButton");
 const stoppen: HTMLElement = document.getElementById("stopButton");
+const aufnehmen: HTMLElement = document.getElementById("recordButton");
+const aufnehmenstopp: HTMLElement = document.getElementById("whileRecord");
+const löschen: HTMLElement = document.getElementById("deleteButton");
 
-// Event-Listener für StopButton
+// Bei Klick auf StopButton wird der aktuelle Beat pausiert
+
 stoppen.addEventListener("click", function(): void {
 clearInterval(intervall);
 
@@ -98,7 +105,7 @@ play.addEventListener("click", function (): void {
 });
 
 
-// Funktion und Eventlistener für Play/Stop Button
+// Klick auf PlayButton wird zu StopButton und andersrum
 
 play.addEventListener("click", function (): void {
 this.classList.add("is-hidden");
@@ -114,6 +121,25 @@ function playstop(first: HTMLElement, second: HTMLElement): void {
 first.classList.add(".is-hidden");
 second.classList.remove(".is-hiden");
 }
+
+// Klick auf RecordButton
+
+aufnehmen.addEventListener ("click", function (): void {
+this.classList.add("is-hidden");
+aufnehmenstopp.classList.remove("is-hidden");
+});
+
+aufnehmenstopp.addEventListener("click", function (): void {
+    this.classList.add("is-hidden");
+    aufnehmen.classList.remove("is-hidden");
+});
+
+
+
+
+
+
+
 
 
 

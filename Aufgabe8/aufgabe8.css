@@ -158,6 +158,15 @@ margin: 4%;
     transition-duration: 0.3s;
 }
 
+#whileRecord {
+    position: relative;
+    color: #5f5f5f;
+    font-size: 80px;
+    left: 2%;
+    margin: 4%;
+}
+
+
 #deleteButton {
     position: relative;
     color: #a8a8a8;
