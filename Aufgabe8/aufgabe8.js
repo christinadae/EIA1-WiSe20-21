@@ -51,6 +51,7 @@ document.querySelector(".button9").addEventListener("click", function () {
 // tslint:disable-next-line: typedef
 function playSample(x) {
     x.play();
+    recordBeat();
 }
 // Array Beat
 // tslint:disable-next-line: typedef
@@ -59,7 +60,7 @@ sample[0] = new Audio("./assets/hihat.mp3");
 sample[1] = new Audio("./assets/kick.mp3");
 sample[2] = new Audio("./assets/snare.mp3");
 // tslint:disable-next-line: typedef
-var index = 0;
+var recordactive;
 var intervall;
 var record;
 // tslint:disable-next-line: typedef
@@ -94,7 +95,6 @@ function playstop(first, second) {
 aufnehmen.addEventListener("click", function () {
     this.classList.add("is-hidden");
     aufnehmenstopp.classList.remove("is-hidden");
-    recordBeat();
 });
 aufnehmenstopp.addEventListener("click", function () {
     this.classList.add("is-hidden");
@@ -130,6 +130,7 @@ function deleteBeat() {
 // Funktion fürs Aufnehmen
 // tslint:disable-next-line: typedef
 function recordBeat() {
-    sample.push();
+    if (recordactive == true)
+        sample.push();
 }
 //# sourceMappingURL=aufgabe8.js.map

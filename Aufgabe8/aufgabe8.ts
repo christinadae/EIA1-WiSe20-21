@@ -64,6 +64,8 @@ document.querySelector(".button9").addEventListener("click", function () {
 // tslint:disable-next-line: typedef
 function playSample (x) {
     x.play();
+    recordBeat();
+    
     }
 
 // Array Beat
@@ -75,7 +77,7 @@ sample [1] = new Audio("./assets/kick.mp3");
 sample [2] = new Audio("./assets/snare.mp3"); 
 
 // tslint:disable-next-line: typedef
-var index = 0;
+var recordactive; 
 var intervall: number; 
 var record: boolean; 
 // tslint:disable-next-line: typedef
@@ -124,17 +126,16 @@ second.classList.remove(".is-hiden");
 
 // Klick auf RecordButton
 
-aufnehmen.addEventListener ("click", function (): void {
-this.classList.add("is-hidden");
-aufnehmenstopp.classList.remove("is-hidden");
-recordBeat();
-});
+aufnehmen.addEventListener("click", function (): void {
+    this.classList.add("is-hidden");
+    aufnehmenstopp.classList.remove("is-hidden");
+    });
+
 
 aufnehmenstopp.addEventListener("click", function (): void {
-    this.classList.add("is-hidden");
-    aufnehmen.classList.remove("is-hidden");
-});
-
+this.classList.add("is-hidden");
+aufnehmen.classList.remove("is-hidden");
+    });
 
 // Funktion PlayStop
 
@@ -142,7 +143,7 @@ aufnehmenstopp.addEventListener("click", function (): void {
 function PlayBeat(a) {
     if (a == true) {
         // tslint:disable-next-line: typedef
-        intervall = setInterval(function () {
+        intervall = setInterval(function (): void {
             if (x < sample.length) {
                 playSample(sample[x]);
                 x++;
@@ -171,6 +172,7 @@ sample.splice(0, sample.length);
 
 // tslint:disable-next-line: typedef
 function recordBeat () {
+if (recordactive == true)
 sample.push();
 }
 
