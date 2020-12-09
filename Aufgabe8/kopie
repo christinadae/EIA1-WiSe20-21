@@ -146,3 +146,59 @@ intervall = setInterval(function () {
         }
     },                  600);
 });
+
+
+aufnehmenstopp.addEventListener("click", function (): void {
+    this.classList.add("is-hidden");
+    aufnehmen.classList.remove("is-hidden");
+});
+
+aufnehmenstopp.addEventListener("click", function (): void {
+    this.classList.add("is-hidden");
+    aufnehmen.classList.remove("is-hidden");
+});
+
+
+
+aufnehmen.addEventListener("click", function (): void {
+    if (this.classList.contains(".active");
+    aufnehmenstopp.classList.remove("is-hidden");
+    });
+
+
+aufnehmenstopp.addEventListener("click", function (): void {
+this.classList.add("is-hidden");
+aufnehmen.classList.remove("is-hidden");
+    });
+
+
+aufnehmenstopp.addEventListener("click", function (): void {
+this.classList.add("is-hidden");
+aufnehmen.classList.remove("is-hidden");
+    });
+
+
+    // Klick auf PlayButton wird zu StopButton und andersrum
+play.addEventListener("click", function (): void {
+    PlayBeat(true);
+    this.classList.add("is-hidden");
+    stoppen.classList.remove("is-hidden");
+    });
+
+stoppen.addEventListener("click", function (): void {
+    PlayBeat(false);
+    this.classList.add("is-hidden");
+    play.classList.remove("is-hidden");
+});
+
+function playstop(first: HTMLElement, second: HTMLElement): void {
+first.classList.add(".is-hidden");
+second.classList.remove(".is-hiden");
+}
+
+
+
+function playstop(first: HTMLElement, second: HTMLElement): void {
+first.classList.add(".is-hidden");
+second.classList.remove(".is-hiden");
+}
