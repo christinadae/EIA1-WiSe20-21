@@ -75,7 +75,6 @@ var x = 0;
 var play = document.getElementById("playButton");
 var stoppen = document.getElementById("stopButton");
 var aufnehmen = document.getElementById("recordButton");
-var aufnehmenstopp = document.getElementById("whileRecord");
 var löschen = document.getElementById("deleteButton");
 // Klick auf RecordButton
 aufnehmen.addEventListener("click", function () {
@@ -87,8 +86,6 @@ aufnehmen.addEventListener("click", function () {
         aufnehmen.classList.add("active");
         recordactive = true;
     }
-    // tslint:disable-next-line: no-unused-expression
-    deleteBeat;
     // tslint:disable-next-line: no-unused-expression
     recordBeat;
     console.log(recordactive);

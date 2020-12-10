@@ -89,7 +89,6 @@ var x: number = 0;
 var play: HTMLElement = document.getElementById("playButton");
 var stoppen: HTMLElement = document.getElementById("stopButton");
 var aufnehmen: HTMLElement = document.getElementById("recordButton");
-var aufnehmenstopp: HTMLElement = document.getElementById("whileRecord");
 var löschen: HTMLElement = document.getElementById("deleteButton");
 
 // Klick auf RecordButton
@@ -103,8 +102,6 @@ aufnehmen.addEventListener("click", function (): void {
         aufnehmen.classList.add("active");
         recordactive = true; 
     }
-    // tslint:disable-next-line: no-unused-expression
-    deleteBeat;
     // tslint:disable-next-line: no-unused-expression
     recordBeat;
     console.log(recordactive);

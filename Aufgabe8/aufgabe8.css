@@ -132,10 +132,7 @@ margin: 4%;
     display: none !important;
 }
 
-.active {
-    
-    color: #833232;
-}
+
 
 #stopButton {
     position: relative;
@@ -179,3 +176,10 @@ margin: 4%;
     transition-duration: 0.3s;
 }
 
+.active {
+    position: relative;
+    font-size: 80px;
+    left: 2%;
+    margin: 4%;
+    color: #833232;
+}
