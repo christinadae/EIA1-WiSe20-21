@@ -204,15 +204,30 @@ second.classList.remove(".is-hiden");
 }
 
 
+
+
 aufnehmen.addEventListener("click", function (): void {
-    if (aufnehmen.classList.contains(".active")) {
-        aufnehmenstopp.classList.remove(".active");
-        recordactive = false;
-    }
-    else {
-        aufnehmenstopp.classList.add(".active");
-        recordactive = true; 
-    }
-    // tslint:disable-next-line: no-unused-expression
-    recordBeat(x);
-});
+    if (this.classList.contains("active");
+    aufnehmenstopp.classList.remove("active");
+    });
+
+
+aufnehmenstopp.addEventListener("click", function (): void {
+this.classList.add("active");
+aufnehmen.classList.remove("active");
+    });
+
+
+<i id="whileRecord" class="fas fa-microphone is-hidden"></i>
+
+#whileRecord {
+    position: relative;
+    color: #5f5f5f;
+    font-size: 80px;
+    left: 2%;
+    margin: 4%;
+}
+
+
+
+

@@ -78,11 +78,10 @@ sample [2] = new Audio("./assets/snare.mp3");
 
 // Alle Variablen
 
-// tslint:disable-next-line: typedef
+
 var recordactive: boolean;
 var intervall: number = 0; 
-// tslint:disable-next-line: typedef
-var x = 0; 
+var x: number = 0; 
 
 
 // Variablen Definition für die Buttons
@@ -94,6 +93,7 @@ var aufnehmenstopp: HTMLElement = document.getElementById("whileRecord");
 var löschen: HTMLElement = document.getElementById("deleteButton");
 
 // Klick auf RecordButton
+
 aufnehmen.addEventListener("click", function (): void {
     if (aufnehmen.classList.contains("active")) {
         aufnehmen.classList.remove("active");
@@ -104,12 +104,13 @@ aufnehmen.addEventListener("click", function (): void {
         recordactive = true; 
     }
     // tslint:disable-next-line: no-unused-expression
+    deleteBeat;
+    // tslint:disable-next-line: no-unused-expression
     recordBeat;
     console.log(recordactive);
     console.log(sample.length);
 
 });
-
 
 // Löscht den aktuell definierten Beat
 löschen.addEventListener("click", function (): void {
@@ -133,7 +134,7 @@ stoppen.addEventListener("click", function (): void {
 // Funktion fürs Aufnehmen
 
 // tslint:disable-next-line: typedef
-function recordBeat (x) {
+function recordBeat (x: HTMLAudioElement): void {
     if (recordactive == true) {
     sample.push(x);
 }

@@ -68,10 +68,8 @@ sample[0] = new Audio("./assets/hihat.mp3");
 sample[1] = new Audio("./assets/kick.mp3");
 sample[2] = new Audio("./assets/snare.mp3");
 // Alle Variablen
-// tslint:disable-next-line: typedef
 var recordactive;
 var intervall = 0;
-// tslint:disable-next-line: typedef
 var x = 0;
 // Variablen Definition für die Buttons
 var play = document.getElementById("playButton");
@@ -89,6 +87,8 @@ aufnehmen.addEventListener("click", function () {
         aufnehmen.classList.add("active");
         recordactive = true;
     }
+    // tslint:disable-next-line: no-unused-expression
+    deleteBeat;
     // tslint:disable-next-line: no-unused-expression
     recordBeat;
     console.log(recordactive);
