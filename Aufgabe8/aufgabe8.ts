@@ -116,13 +116,13 @@ löschen.addEventListener("click", function (): void {
     });
 
 // Klick auf PlayButton wird zu StopButton und andersrum
-play.addEventListener("click", function () {
+play.addEventListener("click", function (): void {
     PlayBeat(true);
     play.classList.add("inactive");
     stoppen.classList.remove("inactive");
     });
 
-stoppen.addEventListener("click", function () {
+stoppen.addEventListener("click", function (): void {
     PlayBeat(false);
     stoppen.classList.add("inactive");
     play.classList.remove("inactive");
@@ -140,7 +140,7 @@ function recordBeat (x: HTMLAudioElement) {
 }
 }
 // Funktion fürs Löschen
-function deleteBeat() {
+function deleteBeat(): void  {
 sample.splice(0, sample.length);
 console.log(sample.length);
 }

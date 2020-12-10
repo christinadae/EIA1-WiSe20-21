@@ -227,6 +227,41 @@ aufnehmen.classList.remove("active");
     left: 2%;
     margin: 4%;
 }
+var aufnehmenstopp: HTMLElement = document.getElementById("whileRecord");
+
+<i id="whileRecord" class="fas fa-microphone"></i>
+
+i id="playButton" class="fas fa-play"></i>
+
+<i id="stopButton" class="fas fa-stop is-hidden"></i>
+
+
+<i id="recordButton" class="fas fa-microphone"></i>
+
+<i id="deleteButton" class="fas fa-trash-alt"></i>
+
+
+var play: HTMLElement = document.getElementById("playButton");
+var stoppen: HTMLElement = document.getElementById("stopButton");
+var aufnehmen: HTMLElement = document.getElementById("recordButton");
+var löschen: HTMLElement = document.getElementById("deleteButton");
+
+
+<div class="recordButton">
+<i class="fas fa-microphone"></i>
+</div>
+
+<div class="playButton">
+<i class="fas fa-play"></i>
+</div>
+
+<div class="stopButton">
+<i class="fas fa-stop inactive"  ></i>
+</div>
+
+<div class="deleteButton">
+<i class="fas fa-trash-alt"></i>
+</div>
 
 
 
