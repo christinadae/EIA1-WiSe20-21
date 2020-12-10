@@ -72,10 +72,10 @@ var recordactive;
 var intervall = 0;
 var x = 0;
 // Variablen Definition für die Buttons
-var play = document.getElementById("playButton");
-var stoppen = document.getElementById("stopButton");
-var aufnehmen = document.getElementById("recordButton");
-var löschen = document.getElementById("deleteButton");
+var play = document.querySelector(".playButton");
+var stoppen = document.querySelector(".stopButton");
+var aufnehmen = document.querySelector(".recordButton");
+var löschen = document.querySelector(".deleteButton");
 // Klick auf RecordButton
 aufnehmen.addEventListener("click", function () {
     if (aufnehmen.classList.contains("active")) {
@@ -98,24 +98,27 @@ löschen.addEventListener("click", function () {
 // Klick auf PlayButton wird zu StopButton und andersrum
 play.addEventListener("click", function () {
     PlayBeat(true);
-    this.classList.add("is-hidden");
-    stoppen.classList.remove("is-hidden");
+    play.classList.add("inactive");
+    stoppen.classList.remove("inactive");
 });
 stoppen.addEventListener("click", function () {
     PlayBeat(false);
-    this.classList.add("is-hidden");
-    play.classList.remove("is-hidden");
+    stoppen.classList.add("inactive");
+    play.classList.remove("inactive");
 });
 // Funktion fürs Aufnehmen
 // tslint:disable-next-line: typedef
 function recordBeat(x) {
+    console.log(recordactive);
     if (recordactive == true) {
         sample.push(x);
+        console.log(sample.length);
     }
 }
 // Funktion fürs Löschen
 function deleteBeat() {
     sample.splice(0, sample.length);
+    console.log(sample.length);
 }
 // Funktion Play and Stop
 // tslint:disable-next-line: typedef

@@ -86,14 +86,15 @@ var x: number = 0;
 
 // Variablen Definition für die Buttons
 
-var play: HTMLElement = document.getElementById("playButton");
-var stoppen: HTMLElement = document.getElementById("stopButton");
-var aufnehmen: HTMLElement = document.getElementById("recordButton");
-var löschen: HTMLElement = document.getElementById("deleteButton");
+var play: HTMLElement = document.querySelector(".playButton");
+var stoppen: HTMLElement = document.querySelector(".stopButton");
+var aufnehmen: HTMLElement = document.querySelector(".recordButton");
+var löschen: HTMLElement = document.querySelector(".deleteButton");
 
 // Klick auf RecordButton
 
 aufnehmen.addEventListener("click", function (): void {
+    
     if (aufnehmen.classList.contains("active")) {
         aufnehmen.classList.remove("active");
         recordactive = false;
@@ -115,30 +116,33 @@ löschen.addEventListener("click", function (): void {
     });
 
 // Klick auf PlayButton wird zu StopButton und andersrum
-play.addEventListener("click", function (): void {
+play.addEventListener("click", function () {
     PlayBeat(true);
-    this.classList.add("is-hidden");
-    stoppen.classList.remove("is-hidden");
+    play.classList.add("inactive");
+    stoppen.classList.remove("inactive");
     });
 
-stoppen.addEventListener("click", function (): void {
+stoppen.addEventListener("click", function () {
     PlayBeat(false);
-    this.classList.add("is-hidden");
-    play.classList.remove("is-hidden");
+    stoppen.classList.add("inactive");
+    play.classList.remove("inactive");
 });
     
 
 // Funktion fürs Aufnehmen
 
 // tslint:disable-next-line: typedef
-function recordBeat (x: HTMLAudioElement): void {
+function recordBeat (x: HTMLAudioElement) {
+    console.log(recordactive);
     if (recordactive == true) {
     sample.push(x);
+    console.log(sample.length);
 }
 }
 // Funktion fürs Löschen
-function deleteBeat(): void {
+function deleteBeat() {
 sample.splice(0, sample.length);
+console.log(sample.length);
 }
     
 // Funktion Play and Stop
