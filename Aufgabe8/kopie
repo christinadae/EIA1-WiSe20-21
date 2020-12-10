@@ -202,3 +202,17 @@ function playstop(first: HTMLElement, second: HTMLElement): void {
 first.classList.add(".is-hidden");
 second.classList.remove(".is-hiden");
 }
+
+
+aufnehmen.addEventListener("click", function (): void {
+    if (aufnehmen.classList.contains(".active")) {
+        aufnehmenstopp.classList.remove(".active");
+        recordactive = false;
+    }
+    else {
+        aufnehmenstopp.classList.add(".active");
+        recordactive = true; 
+    }
+    // tslint:disable-next-line: no-unused-expression
+    recordBeat(x);
+});
