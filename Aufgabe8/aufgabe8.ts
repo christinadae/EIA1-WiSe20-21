@@ -1,7 +1,7 @@
 // Array Buttons
+namespace L08 {
 
-// tslint:disable-next-line: typedef
-var button = [];
+var button: HTMLAudioElement[] = []; 
 button [1] = new Audio("./assets/A.mp3"); 
 button [2] = new Audio("./assets/C.mp3"); 
 button [3] = new Audio("./assets/F.mp3"); 
@@ -55,18 +55,15 @@ document.querySelector(".button9").addEventListener("click", function (): void {
 // PlaySample Funktion
 function playSample (x: HTMLAudioElement): void  {
 x.play();
+
 }
 
 // Array für den Beat
 
-// tslint:disable-next-line: typedef
-var sample  = [];
+var sample: HTMLAudioElement[] = [];  
 sample [0] = new Audio("./assets/hihat.mp3"); 
 sample [1] = new Audio("./assets/kick.mp3"); 
 sample [2] = new Audio("./assets/snare.mp3"); 
-
-// Alle Variablen
-
 
 var recordactive: boolean;
 var intervall: number = 0; 
@@ -149,7 +146,7 @@ function PlayBeat(a: boolean): void {
         clearInterval(intervall);
     }}
 
-
+}
 
 
 
