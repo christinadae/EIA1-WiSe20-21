@@ -70,7 +70,7 @@ sample [2] = new Audio("./assets/snare.mp3");
 
 var recordactive: boolean;
 var intervall: number = 0; 
-var x: number = 0; 
+var x: HTMLAudioElement;  
 
 
 // Variablen Definition für die Buttons
@@ -92,8 +92,8 @@ aufnehmen.addEventListener("click", function (): void {
         aufnehmen.classList.add("active");
         recordactive = true; 
     }
-    // tslint:disable-next-line: no-unused-expression
-    recordBeat;
+    
+    recordBeat(x);
     console.log(recordactive);
     console.log(sample.length);
 
@@ -133,17 +133,15 @@ console.log(sample.length);
 }
     
 // Funktion Play and Stop
-
-// tslint:disable-next-line: typedef
-function PlayBeat(a): void {
+function PlayBeat(a: boolean): void {
     if (a == true) {
     intervall = setInterval(function (): void {
-    if (x < sample.length) {
-    playSample(sample[x]);
-    x++;
+    if (intervall < sample.length) {
+    playSample(sample[intervall]);
+    intervall++;
     }
     else {
-    x = 0;
+    intervall = 0;
     }
     },                      500);
     }
