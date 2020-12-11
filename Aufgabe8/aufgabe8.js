@@ -11,53 +11,43 @@ button[7] = new Audio("./assets/laugh-1.mp3");
 button[8] = new Audio("./assets/laugh-2.mp3");
 button[9] = new Audio("./assets/snare.mp3");
 // Event-Listener für Sounds
-// tslint:disable-next-line: typedef
 document.querySelector(".button1").addEventListener("click", function () {
     playSample(button[1]);
     recordBeat(button[1]);
 });
-// tslint:disable-next-line: typedef
 document.querySelector(".button2").addEventListener("click", function () {
     playSample(button[2]);
     recordBeat(button[2]);
 });
-// tslint:disable-next-line: typedef
 document.querySelector(".button3").addEventListener("click", function () {
     playSample(button[3]);
     recordBeat(button[3]);
 });
-// tslint:disable-next-line: typedef
 document.querySelector(".button4").addEventListener("click", function () {
     playSample(button[4]);
     recordBeat(button[4]);
 });
-// tslint:disable-next-line: typedef
 document.querySelector(".button5").addEventListener("click", function () {
     playSample(button[5]);
     recordBeat(button[5]);
 });
-// tslint:disable-next-line: typedef
 document.querySelector(".button6").addEventListener("click", function () {
     playSample(button[6]);
     recordBeat(button[6]);
 });
-// tslint:disable-next-line: typedef
 document.querySelector(".button7").addEventListener("click", function () {
     playSample(button[7]);
     recordBeat(button[7]);
 });
-// tslint:disable-next-line: typedef
 document.querySelector(".button8").addEventListener("click", function () {
     playSample(button[8]);
     recordBeat(button[8]);
 });
-// tslint:disable-next-line: typedef
 document.querySelector(".button9").addEventListener("click", function () {
     playSample(button[9]);
     recordBeat(button[9]);
 });
 // PlaySample Funktion
-// tslint:disable-next-line: typedef
 function playSample(x) {
     x.play();
 }
@@ -107,7 +97,6 @@ stoppen.addEventListener("click", function () {
     play.classList.remove("inactive");
 });
 // Funktion fürs Aufnehmen
-// tslint:disable-next-line: typedef
 function recordBeat(x) {
     console.log(recordactive);
     if (recordactive == true) {
@@ -124,7 +113,6 @@ function deleteBeat() {
 // tslint:disable-next-line: typedef
 function PlayBeat(a) {
     if (a == true) {
-        // tslint:disable-next-line: typedef
         intervall = setInterval(function () {
             if (x < sample.length) {
                 playSample(sample[x]);
