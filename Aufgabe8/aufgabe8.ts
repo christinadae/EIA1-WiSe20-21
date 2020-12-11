@@ -55,6 +55,7 @@ document.querySelector(".button9").addEventListener("click", function (): void {
 // PlaySample Funktion
 function playSample (x: HTMLAudioElement): void  {
 x.play();
+recordBeat(x);
 
 }
 
@@ -67,7 +68,9 @@ sample [2] = new Audio("./assets/snare.mp3");
 
 var recordactive: boolean;
 var intervall: number = 0; 
-var x: HTMLAudioElement;  
+var x: HTMLAudioElement;
+var a: boolean;
+var index: number;
 
 
 // Variablen Definition für die Buttons
@@ -90,7 +93,7 @@ aufnehmen.addEventListener("click", function (): void {
         recordactive = true; 
     }
     
-    recordBeat(x);
+    
     console.log(recordactive);
     console.log(sample.length);
 
@@ -133,12 +136,12 @@ console.log(sample.length);
 function PlayBeat(a: boolean): void {
     if (a == true) {
     intervall = setInterval(function (): void {
-    if (intervall < sample.length) {
-    playSample(sample[intervall]);
-    intervall++;
+    if (index < sample.length) {
+    playSample(sample[index]);
+    index++;
     }
     else {
-    intervall = 0;
+    index = 0;
     }
     },                      500);
     }

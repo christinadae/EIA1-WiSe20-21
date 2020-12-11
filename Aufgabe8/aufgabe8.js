@@ -51,6 +51,7 @@ var L08;
     // PlaySample Funktion
     function playSample(x) {
         x.play();
+        recordBeat(x);
     }
     // Array für den Beat
     var sample = [];
@@ -60,6 +61,8 @@ var L08;
     var recordactive;
     var intervall = 0;
     var x;
+    var a;
+    var index;
     // Variablen Definition für die Buttons
     var play = document.querySelector(".playButton");
     var stoppen = document.querySelector(".stopButton");
@@ -75,7 +78,6 @@ var L08;
             aufnehmen.classList.add("active");
             recordactive = true;
         }
-        recordBeat(x);
         console.log(recordactive);
         console.log(sample.length);
     });
@@ -111,12 +113,12 @@ var L08;
     function PlayBeat(a) {
         if (a == true) {
             intervall = setInterval(function () {
-                if (intervall < sample.length) {
-                    playSample(sample[intervall]);
-                    intervall++;
+                if (index < sample.length) {
+                    playSample(sample[index]);
+                    index++;
                 }
                 else {
-                    intervall = 0;
+                    index = 0;
                 }
             }, 500);
         }
