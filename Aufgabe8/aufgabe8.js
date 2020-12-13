@@ -120,7 +120,7 @@ var L08;
                 else {
                     index = 0;
                 }
-            }, 500);
+            }, 400);
         }
         else {
             clearInterval(intervall);

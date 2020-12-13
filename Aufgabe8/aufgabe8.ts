@@ -143,7 +143,7 @@ function PlayBeat(a: boolean): void {
     else {
     index = 0;
     }
-    },                      500);
+    },                      400);
     }
     else {
         clearInterval(intervall);
