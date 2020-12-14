@@ -1,16 +1,18 @@
 var items: string [] = [];
 
 var listactive: boolean;
+var enter: Event;
+var todolist: HTMLElement = document.getElementById("#ToDoList");
 
 
-document.getElementById('#ToDoList').addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-    }
-});
+document.getElementById("#ToDoList").addEventListener("keypress", function (enter)
+    if (enter.key === "Enter") {
+    todolist.push(enter);
+    }};
+  
 
-function ToDoList () {
-    if (listactive == true) {
-        items.push();
-       
-}}
 
+
+function onEnter(event: Event):void {
+   
+}

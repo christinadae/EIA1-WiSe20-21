@@ -1,12 +1,13 @@
 var items = [];
 var listactive;
-document.getElementById('#ToDoList').addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-    }
+var enter;
+var todolist = document.getElementById("#ToDoList");
+document.getElementById("#ToDoList").addEventListener("keypress", function (enter) {
 });
-function ToDoList() {
-    if (listactive == true) {
-        items.push();
-    }
+if (enter.key === "Enter") {
+    todolist.push(enter);
+}
+;
+function onEnter(event) {
 }
 //# sourceMappingURL=aufgabe9.js.map
