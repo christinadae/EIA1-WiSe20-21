@@ -1,0 +1,14 @@
+body {
+    background-image: url("bgimages/3.jpg");
+}
+.ToDoBox {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    color: #c4aa89;
+    height: 300px;
+    width: 300px;
+    top: 80%;
+    left: 50%;
+    
+}
