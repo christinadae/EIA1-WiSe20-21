@@ -13,7 +13,7 @@ body {
     top: 20%;
     left: 28%;
     border-style: solid;
-    border-color: #ffffff;
+    border-color: #eedcc6;
 
 }
 
@@ -24,4 +24,18 @@ h1 {
     font-weight: lighter;
     background-color: #ffecd4;
     text-align: center;
+}
+
+#ToDoList {
+  position: relative;
+  height: 70px;
+  width: 590px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 20px;
+  border-style: solid;
+  border-color: #eedcc6;
+  background-color: #fff8ef;
+  
+
 }
