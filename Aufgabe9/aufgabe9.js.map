@@ -1,1 +1,1 @@
-{"version":3,"file":"aufgabe9.js","sourceRoot":"","sources":["aufgabe9.ts"],"names":[],"mappings":"AAAA,IAAI,KAAK,GAAc,EAAE,CAAC"}
+{"version":3,"file":"aufgabe9.js","sourceRoot":"","sources":["aufgabe9.ts"],"names":[],"mappings":"AAAA,IAAI,KAAK,GAAc,EAAE,CAAC;AAE1B,IAAI,UAAmB,CAAC;AAGxB,QAAQ,CAAC,cAAc,CAAC,WAAW,CAAC,CAAC,gBAAgB,CAAC,UAAU,EAAE,UAAU,CAAC;IACzE,IAAI,CAAC,CAAC,GAAG,KAAK,OAAO,EAAE;KACtB;AACL,CAAC,CAAC,CAAC;AAEH,SAAS,QAAQ;IACb,IAAI,UAAU,IAAI,IAAI,EAAE;QACpB,KAAK,CAAC,IAAI,EAAE,CAAC;KAEpB;AAAA,CAAC"}
