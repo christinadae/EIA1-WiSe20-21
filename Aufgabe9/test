@@ -1,0 +1,153 @@
+let input: HTMLElement = document.getElementById("input");
+let addToDo: HTMLElement;
+
+addToDo.addEventListener("keypress", function(): void {
+var text: HTMLElement = document.createElement("text");
+text.innerText = input.value; 
+addToDo.appendChild(text);
+
+});
+
+
+
+
+const list: HTMLElement = document.getElementById("#todolist");
+const input: HTMLElement = document.getElementById("#input");
+
+let LIST: HTMLLIElement[] = [];
+let id: number = 0;
+let done: boolean;
+let trash: boolean;
+
+
+
+
+
+function addToDo (toDo): void {
+ const text: string =  `<li class="item">
+<i class="far fa-check-circle"> job="complete" </i>
+<p class="text"> ${toDo}</p>
+<i class="far fa-trash-alt"> job ="delete"</i>
+
+</li>`
+
+ const position = "beforeend";
+
+
+ list.insertAdjacentHTML(position, text);
+} 
+
+document.addEventListener("keyup", function (event: KeyboardEvent): void {
+// tslint:disable-next-line: align
+if(event.keyCode)) {
+    const toDo = input.value;
+    if (toDo) {
+     addToDo(toDo, id, false, false); 
+     LIST.push(
+     {
+      name: toDo,
+      id: id,
+      done: false,
+      trash: false
+     }   
+    );
+    }
+    input.value = "";
+    id++; 
+}
+});
+
+
+
+
+  
+// Select the Elements
+const list: HTMLElement = document.getElementById("todolist");
+const input: HTMLElement = document.getElementById("input");
+
+// Classes names
+const check: string = "fa-check-circle";
+const uncheck: string = "fa-circle-thin";
+
+// Variables
+let LIST, id;
+let data = localStorage.getItem("TODO");
+
+// check if data is not empty
+if (data) {
+  LIST = JSON.parse(data);
+  id = LIST.length; // set the id to the last one in the list
+  loadList(LIST); // load the list to the user interface
+} else {
+  // if data isn't empty
+  LIST = [];
+  id = 0;
+}
+
+// load items to the user's interface
+function loadList(array): void {
+  // tslint:disable-next-line: typedef
+  array.forEach(function (item: HTMLElement) {
+    addToDo(item.name, item.id, item.done, item.trash);
+  });
+}
+
+
+
+// add to do function
+function addToDo(toDo, id, done, trash) {
+
+  if (trash) { return; }
+
+
+  const item: string = `  <li class="item">
+                        <i class="fa ${done} co" job="complete" id="${id}"></i>
+                       
+                        <i class="fa fa-trash-o de" job="delete" id="${id}"></i>
+                    </li>
+                `;
+
+  const position = "beforeend";
+  list.insertAdjacentHTML(position, item);
+}
+
+// add an item to the list user the enter key
+document.addEventListener("keyup", function (event: KeyboardEvent) {
+  if (event.keyCode == 13) {
+    const toDo: string = input.value;
+
+    // if the input isn't empty
+    if (toDo) {
+      addToDo(toDo, id, false, false);
+
+      LIST.push({
+        name: toDo,
+        id: id,
+        done: false,
+        trash: false
+      });
+
+      // add item to localstorage (this code must be added where the LIST array updated)
+      localStorage.setItem("TODO", JSON.stringify(LIST));
+
+      id++;
+    }
+    input.value = "";
+  }
+});
+
+// complete to do
+function completeToDo(element) {
+  element.classList.toggle(check);
+  element.classList.toggle(uncheck);
+
+  LIST[element.id].done = LIST[element.id].done ? false : true;
+}
+
+// remove to do
+function removeToDo(element): void {
+  element.parentNode.parentNode.removeChild(element.parentNode);
+
+  LIST[element.id].trash = true;
+}
+

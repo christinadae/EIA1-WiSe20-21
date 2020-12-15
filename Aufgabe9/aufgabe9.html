@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-    <script src="aufgabe9.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
     
 
     
@@ -16,13 +17,28 @@
 <body>
     <h1> To-Do-List</h1>   
 <div class="ToDoContainer">
-<input id="input" placeholder= "Add new task"> 
 
+    <div class="content">
+    <ul id="todolist"></ul>
+    <li class="item">
+    <i class="far fa-check-circle"></i>
+    <i class="far fa-trash-alt"></i>
+    <p class="text"></p>
+    </li>
+    
 
+<div class="addTask">
+<input type="text" id="input" placeholder="Add new task">
+<span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+</div>
+
+</div>
 </div>
   
 
 
-</div>    
+</div>  
+<script src="aufgabe9.js" defer></script>  
 </body>
 </html>
