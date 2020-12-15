@@ -1,13 +1,8 @@
-var items = [];
-var listactive;
-var enter;
-var todolist = document.getElementById("#ToDoList");
-document.getElementById("#ToDoList").addEventListener("keypress", function (enter) {
+var input = document.getElementById("input");
+var addToDo;
+addToDo.addEventListener("keypress", function () {
+    var text = document.createElement("text");
+    text.innerText = input.value;
+    addToDo.appendChild(text);
 });
-if (enter.key === "Enter") {
-    todolist.push(enter);
-}
-;
-function onEnter(event) {
-}
 //# sourceMappingURL=aufgabe9.js.map

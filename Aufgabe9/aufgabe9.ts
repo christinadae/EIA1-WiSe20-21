@@ -1,18 +1,9 @@
-var items: string [] = [];
+let input: HTMLElement = document.getElementById("input");
+let addToDo: HTMLElement;
 
-var listactive: boolean;
-var enter: Event;
-var todolist: HTMLElement = document.getElementById("#ToDoList");
+addToDo.addEventListener("keypress", function(): void {
+var text: HTMLElement = document.createElement("text");
+text.innerText = input.value; 
+addToDo.appendChild(text);
 
-
-document.getElementById("#ToDoList").addEventListener("keypress", function (enter)
-    if (enter.key === "Enter") {
-    todolist.push(enter);
-    }};
-  
-
-
-
-function onEnter(event: Event):void {
-   
-}
+});
