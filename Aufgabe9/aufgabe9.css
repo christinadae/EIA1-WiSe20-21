@@ -17,6 +17,43 @@ body {
    
 }
 
+#inputtask {
+    position: relative;
+    height: 50px;
+    width: 470px;
+    left: 0%;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    background-color: #fff8ef;
+    border-radius: 0;
+    
+}
+
+.add {
+    position: absolute;
+    height: 32px;
+    width: 94px;
+    padding: 10px;
+    margin-left: 4px;
+    background: #fff8ef;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    left: 80%;
+    top: 2.67%;
+  }
+  
+  .add:hover {
+    background-color: #ddd2c4;
+  }
+
+  
+
 h1 {
     color: #506266;
     font-size: 55px;
@@ -25,50 +62,72 @@ h1 {
     background-color: #ffecd4;
     text-align: center;
 }
+.Tasks {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff8ef;
+    height: 55px;
+    width: 474px;
+    left: 0%;
+    top: 15%;
+}
 
-#input {
-  position: relative;
-  height: 70px;
-  width: 450px;
-  left: 15%;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  font-size: 20px;
-  border-style: solid;
-  border-color: #eedcc6;
-  background-color: #fff8ef;
-  
+.inactive {
+    display: none !important;
+}
+h2 {
+    position: relative;
+    right: 75%;
+    top: 10%;
+    text-align: center;
+}
+
+
+
+ul {
+list-style: none; 
+font-size: 25px;
 
 }
 
 .check {
-    position: absolute;
+    position: relative;
 font-size: 40px;
-right: 91%;
-
-top: 11%;
+left: 3%;
+top: 0%;
 }
-
 .check:hover {
-position: absolute;
-font-size: 40px;
-right: 91%;
-top: 11%;
+    position: relative;
+    font-size: 40px;
+    left: 3%;
+    top: 0%;
 color: #9eb498;
 }
 
 .trash {
     position: absolute;
 font-size: 40px;
-left: 91%;
-top: 11%;
+left: 89%;
+top: 0%;
 
 }
 
 .trash:hover  {
     position: absolute;
     font-size: 40px;
-    left: 91%;
-    top: 11%;
+    left: 89%;
+    top: 0%;
     color: #b4756c;
+}
+
+label {
+    position: absolute;
+    left: 35%;
+    top: 15%;
+font-size: 25px;
+}
+
+.iconInactive {
+    display: none!important;
 }

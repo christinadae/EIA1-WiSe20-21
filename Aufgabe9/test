@@ -151,3 +151,126 @@ function removeToDo(element): void {
   LIST[element.id].trash = true;
 }
 
+
+
+.check {
+    position: absolute;
+font-size: 40px;
+right: 91%;
+
+top: 11%;
+}
+
+.check:hover {
+position: absolute;
+font-size: 40px;
+right: 91%;
+top: 11%;
+color: #9eb498;
+}
+
+.trash {
+    position: absolute;
+font-size: 40px;
+left: 91%;
+top: 11%;
+
+}
+
+.trash:hover  {
+    position: absolute;
+    font-size: 40px;
+    left: 91%;
+    top: 11%;
+    color: #b4756c;
+}
+
+
+<li>
+
+<label>Arzttermin</label>
+<div class="add"> <i class="fas fa-plus"></i></div>
+<div class="check"> <i class="far fa-check-circle"></i></div>
+<div class="trash"> <i  class="far fa-trash-alt"></i></div>
+
+<label>Geschenk kaufen</label>
+<div class="add"> <i class="fas fa-plus"></i></div>
+<div class="check"> <i class="far fa-check-circle"></i></div>
+<div class="trash"> <i  class="far fa-trash-alt"></i></div>
+
+<label>Aufräumen</label>
+<div class="add"> <i class="fas fa-plus"></i></div>
+<div class="check"> <i class="far fa-check-circle"></i></div>
+<div class="trash"> <i  class="far fa-trash-alt"></i></div>
+</li>
+
+// another ts try
+
+namespace L09 {
+
+
+// tslint:disable-next-line: typedef
+var liste = document.getElementsByTagName("LI");
+var i: number;
+for (i = 0; i < NodeList.length; i++) {
+  var span: HTMLElement = document.createElement("SPAN");
+  var txt: Text = document.createTextNode("\u00D7");
+  span.className = "";
+  span.appendChild(txt);
+  NodeList[i].appendChild(span);
+}
+
+
+var löschen: HTMLCollectionOf<Element> = document.getElementsByClassName("löschen");
+var b: number;
+for (b = 0; b < close.length; b++) {
+  löschen[b].onclick = function(): void {
+    // tslint:disable-next-line: typedef
+    var div = this.parentElement;
+    div.style.display = "none";
+  };
+}
+
+// Add a "checked" symbol when clicking on a list item
+var ulliste: HTMLUListElement = document.querySelector("ul");
+// tslint:disable-next-line: typedef
+liste.addEventListener("click", function(ev): void {
+  if (ev.target.tagName === "LI") {
+    ev.target.classList.toggle("check");
+  }
+},                     false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement(): void {
+  var li: HTMLLIElement = document.createElement("li");
+  var inputValue: string = document.getElementById("inputtask").value;
+  var t: Text = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === "") {
+    alert("You must write something!");
+  } else {
+    document.getElementById("to-dos").appendChild(li);
+  }
+  document.getElementById("inputtask").value = "";
+
+  var span: HTMLElement = document.createElement("SPAN");
+  var txt: Text = document.createTextNode("\u00D7");
+  span.className = "";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < löschen.length; i++) {
+    löschen[i].onclick = function(): void {
+      // tslint:disable-next-line: typedef
+      var div = this.parentElement;
+      div.style.display = "none";
+    };
+  }
+}
+
+}
+
+
+ <div id="myDIV" class="header">
+<input type="text" id="inputtask" placeholder="Add new task">
+<span onclick="newElement()" div class="add"> <i class="fas fa-plus"></i></div>
