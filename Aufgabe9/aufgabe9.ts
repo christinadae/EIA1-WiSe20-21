@@ -1,39 +1,51 @@
-var iconcheck: HTMLElement = document.querySelector("check");
-var icontrash: HTMLElement = document.querySelector("trash");
-var text: HTMLElement = document.createElement("text");
-var iconADD: Element = document.querySelector("add");
-var container = document.createElement("div");
-
-var addingTask = document.getElementById("inputtask");
+var addTask: HTMLElement = document.getElementById("inputtask");
+var iconADD: HTMLElement = document.querySelector("i");
+iconADD.className = "fas fa-plus";
+  
 iconADD.addEventListener("click", function (): void {
-createTask();
+  newTask();
+  });
+document.addEventListener("keydown", function (event: KeyboardEvent): void {
+    if (event.keyCode == 13) {
+        newTask();
+    }
 });
+  
+ // Funktion: Neue Aufgabe wird 
+function newTask(): void {
 
+    var textfield: HTMLDivElement = document.createElement("div");
+    var circle: HTMLElement = document.createElement("i");
+    circle.className = "far fa-circle";
+    var check: HTMLElement = document.createElement("i");
+    check.className = "far fa-check-circle inactive";
+    var text: HTMLElement = document.createElement("span");
+    text.innerHTML = addTask.value;
+    var trash: HTMLElement = document.createElement("i");
+    trash.className = "fas fa-trash-alt";
 
+    //Icons werden mit dem Textfeld hinugefügt
+    document.body.appendChild(textfield);
+    textfield.appendChild(circle);
+    textfield.appendChild(check);
+    textfield.appendChild(text);
+    textfield.appendChild(trash);
+    
+    // Icon-Nutzung
 
-
-function createTask(): void {
-  var container;
-  var iconcheck;
-  var icontrash;
-  var text;
-
-  document.body.appendChild(container);
-  container.appendChild(iconcheck);
-  container.appendChild(icontrash);
-  container.appendChild(text);
- 
-
-  iconcheck.addEventListener("click", function () {
-    iconcheck.classList.add("iconInactive");
-    icontrash.classList.remove("iconInactive");
-  });
-  icontrash.addEventListener("click", function () {
-    icontrash.classList.add("iconInactive");
-    iconcheck.classList.remove("iconInactive");
-  });
+    circle.addEventListener("click", function (): void {
+        this.classList.add("inactive");
+        check.classList.remove("inactive");
+    });
+    check.addEventListener("click", function (): void {
+        this.classList.add("inactive");
+        circle.classList.remove("inactive");
+    });
+    trash.addEventListener("click", function (): void {
+        document.body.removeChild(textfield);
+  
+    });
 }
-
 
 
 

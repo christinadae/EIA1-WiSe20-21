@@ -2,6 +2,7 @@ body {
     background-image: url("bgimages/3.jpg");
     font-family: 'Playfair Display', serif;
     opacity: 98%;
+    position: sticky;
 }
 .ToDoContainer {
     position: absolute;
@@ -10,8 +11,8 @@ body {
     background-color: #ffecd4;
     height: 600px;
     width: 600px;
-    top: 20%;
-    left: 28%;
+    top: 120%;
+    left: 0%;
     border-style: solid;
     border-color: #eedcc6;
    
@@ -30,30 +31,53 @@ body {
     border-radius: 0;
     
 }
-
 .add {
     position: absolute;
-    height: 32px;
-    width: 94px;
-    padding: 10px;
-    margin-left: 4px;
+    height: 52px;
+    width: 122px;
     background: #fff8ef;
     float: left;
-    text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     cursor: pointer;
+    text-align: center;
     transition: 0.3s;
     border-radius: 0;
-    left: 80%;
-    top: 2.67%;
-  }
-  
-  .add:hover {
-    background-color: #ddd2c4;
-  }
+    left: 33.8%;
+    top: 125%;
+    color:#506266;
+}
 
-  
+.add:hover {
+    position: absolute;
+    height: 52px;
+    width: 122px;
+    background: #d1c5b6;
+    float: left;
+    font-size: 35px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 0;
+    left: 33.8%;
+    top: 125%;
+}
 
+
+div{
+    position: relative;
+    width: 500px;
+    height: 70px;
+    background-color: white;
+    margin-left: 30%;
+    top: 200%;
+}
+ span {
+    font-size: 30px;
+}
+
+p {
+    font-size: 30px;
+}
 h1 {
     color: #506266;
     font-size: 55px;
@@ -62,20 +86,6 @@ h1 {
     background-color: #ffecd4;
     text-align: center;
 }
-.Tasks {
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #fff8ef;
-    height: 55px;
-    width: 474px;
-    left: 0%;
-    top: 15%;
-}
-
-.inactive {
-    display: none !important;
-}
 h2 {
     position: relative;
     right: 75%;
@@ -83,42 +93,10 @@ h2 {
     text-align: center;
 }
 
-
-
 ul {
 list-style: none; 
 font-size: 25px;
 
-}
-
-.check {
-    position: relative;
-font-size: 40px;
-left: 3%;
-top: 0%;
-}
-.check:hover {
-    position: relative;
-    font-size: 40px;
-    left: 3%;
-    top: 0%;
-color: #9eb498;
-}
-
-.trash {
-    position: absolute;
-font-size: 40px;
-left: 89%;
-top: 0%;
-
-}
-
-.trash:hover  {
-    position: absolute;
-    font-size: 40px;
-    left: 89%;
-    top: 0%;
-    color: #b4756c;
 }
 
 label {
@@ -128,6 +106,42 @@ label {
 font-size: 25px;
 }
 
-.iconInactive {
-    display: none!important;
+.inactive {
+    display: none !important;
 }
+.fa-circle{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+}
+.fa-circle:hover {
+    cursor: pointer;
+}
+.fa-check-circle{
+    position: relative;
+    font-size: 0px;
+    left: 3%;
+    top: 0%;
+}
+.fa-check-circle:hover {
+    position: relative;
+    font-size: 20px;
+    left: 3%;
+    top: 0%;
+color: #9eb498;
+}
+.fa-trash-alt{
+    position: absolute;
+    font-size: 40px;
+    left: 89%;
+    top: 0%;
+}
+.fa-trash-alt:hover {
+    position: absolute;
+    font-size: 40px;
+    left: 89%;
+    top: 0%;
+    color: #b4756c;
+}
+
+  
