@@ -14,7 +14,7 @@ document.addEventListener("keydown", function (event: KeyboardEvent): void {
  // Funktion: Neue Aufgabe wird 
 function newTask(): void {
 
-    var textfield: HTMLDivElement = document.createElement("div");
+    var container: HTMLDivElement = document.createElement("div");
     var circle: HTMLElement = document.createElement("i");
     circle.className = "far fa-circle";
     var check: HTMLElement = document.createElement("i");
@@ -25,11 +25,11 @@ function newTask(): void {
     trash.className = "fas fa-trash-alt";
 
     //Icons werden mit dem Textfeld hinugefügt
-    document.body.appendChild(textfield);
-    textfield.appendChild(circle);
-    textfield.appendChild(check);
-    textfield.appendChild(text);
-    textfield.appendChild(trash);
+    document.body.appendChild(container);
+    container.appendChild(circle);
+    container.appendChild(check);
+    container.appendChild(text);
+    container.appendChild(trash);
     
     // Icon-Nutzung
 
@@ -42,7 +42,7 @@ function newTask(): void {
         circle.classList.remove("inactive");
     });
     trash.addEventListener("click", function (): void {
-        document.body.removeChild(textfield);
+        document.body.removeChild(container);
   
     });
 }
