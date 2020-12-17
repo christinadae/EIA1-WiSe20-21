@@ -1,14 +1,18 @@
 var addTask = document.getElementById("inputtask");
 var iconADD = document.querySelector("i");
 iconADD.className = "fas fa-plus";
+var totalindex = 0;
 iconADD.addEventListener("click", function () {
     newTask();
 });
-document.addEventListener("keydown", function (event) {
-    if (event.keyCode == 13) {
+addTask.addEventListener("keypress", function (e) {
+    if (e.code === "Enter") {
         newTask();
     }
 });
+function total() {
+    document.querySelector("h3").innerHTML = totalindex + " in total";
+}
 // Funktion: Neue Aufgabe wird 
 function newTask() {
     var container = document.createElement("div");
@@ -37,7 +41,11 @@ function newTask() {
     });
     trash.addEventListener("click", function () {
         document.body.removeChild(container);
+        totalindex--;
+        total();
     });
+    totalindex++;
+    total();
 }
 //# sourceMappingURL=TypeScript.js.map
 //# sourceMappingURL=aufgabe9.js.map
