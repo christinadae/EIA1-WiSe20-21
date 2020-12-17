@@ -16,7 +16,7 @@ addTask.addEventListener("keypress", function (event: KeyboardEvent): void {
 });
 
 function total(): void {
-    document.querySelector("h3").innerHTML = totalindex + " in total";
+    document.querySelector("h3").innerHTML = totalindex + " tasks open";
 } 
  // Funktion: Neue Aufgabe wird 
 function newTask(): void {

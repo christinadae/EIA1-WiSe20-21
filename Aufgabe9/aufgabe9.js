@@ -13,7 +13,7 @@ addTask.addEventListener("keypress", function (event) {
     }
 });
 function total() {
-    document.querySelector("h3").innerHTML = totalindex + " in total";
+    document.querySelector("h3").innerHTML = totalindex + " tasks open";
 }
 // Funktion: Neue Aufgabe wird 
 function newTask() {
