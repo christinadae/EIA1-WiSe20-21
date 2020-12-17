@@ -4,10 +4,12 @@ iconADD.className = "fas fa-plus";
 var totalindex = 0;
 iconADD.addEventListener("click", function () {
     newTask();
+    placeholder();
 });
-addTask.addEventListener("keypress", function (e) {
-    if (e.code === "Enter") {
+addTask.addEventListener("keypress", function (event) {
+    if (event.code === "Enter") {
         newTask();
+        placeholder();
     }
 });
 function total() {
@@ -46,6 +48,9 @@ function newTask() {
     });
     totalindex++;
     total();
+}
+function placeholder() {
+    addTask.value = "";
 }
 //# sourceMappingURL=TypeScript.js.map
 //# sourceMappingURL=aufgabe9.js.map

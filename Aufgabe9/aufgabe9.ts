@@ -5,11 +5,13 @@ var totalindex: number = 0;
   
 iconADD.addEventListener("click", function (): void {
   newTask();
+  placeholder();
   });
 
-addTask.addEventListener("keypress", function (e: KeyboardEvent): void {
-    if (e.code === "Enter") {
+addTask.addEventListener("keypress", function (event: KeyboardEvent): void {
+    if (event.code === "Enter") {
         newTask();
+        placeholder();
     }
 });
 
@@ -55,6 +57,10 @@ function newTask(): void {
 
     totalindex++;
     total();
+}
+
+function placeholder(): void {
+    addTask.value = "";
 }
 
 

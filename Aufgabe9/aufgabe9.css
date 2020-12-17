@@ -28,7 +28,6 @@ body {
     font-size: 20px;
     border: none;
     background-color: #fff8ef;
-    border-radius: 0;
     border-radius: 10px;
     border-width: medium;
     
@@ -37,18 +36,16 @@ body {
     position: relative;
     height:60px;
     width: 90px;
-    background: #fff8ef;
+    border-radius: 10px;
     float: left;
     font-size: 40px;
     cursor: pointer;
     text-align: center;
     transition: 0.3s;
-    border-radius: 0;
     left: 55.3%;
     top: -103%;
     color:#506266;
-    border-radius: 10px;
-    border-width: medium;
+    
 }
 
 .add:hover {
