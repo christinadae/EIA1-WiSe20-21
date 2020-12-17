@@ -1,9 +1,4 @@
-body {
-    background-image: url("bgimages/3.JPG");
-    font-family: 'Playfair Display', serif;
-    opacity: 98%;
-    position: sticky;
-}
+
 .ToDoContainer {
     position: relative;
     display: flex;
