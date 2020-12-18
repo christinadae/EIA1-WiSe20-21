@@ -3,21 +3,16 @@ var iconADD: HTMLElement = document.querySelector("i");
 iconADD.className = "fas fa-plus";
 var totalindex: number = 0;
   
-iconADD.addEventListener("click", function (): void {
-  newTask();
-  placeholder();
-  });
 
-addTask.addEventListener("keypress", function (event: KeyboardEvent): void {
-    if (event.code === "Enter") {
-        newTask();
-        placeholder();
-    }
-});
 
 function total(): void {
     document.querySelector("h3").innerHTML = totalindex + " tasks open";
 } 
+
+function placeholder(): void {
+    addTask.value = "";
+}
+
  // Funktion: Neue Aufgabe wird 
 function newTask(): void {
 
@@ -37,6 +32,21 @@ function newTask(): void {
     container.appendChild(check);
     container.appendChild(text);
     container.appendChild(trash);
+
+// Event-Listener fürs Abschicken des Textfelds
+
+    iconADD.addEventListener("click", function (): void {
+        newTask();
+        placeholder();
+        });
+      
+    addTask.addEventListener("keypress", function (event: KeyboardEvent): void {
+          if (event.code === "Enter") {
+              newTask();
+              placeholder();
+          }
+      });
+    
     
     // Icon-Nutzung
 
@@ -59,9 +69,6 @@ function newTask(): void {
     total();
 }
 
-function placeholder(): void {
-    addTask.value = "";
-}
 
 
 

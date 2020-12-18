@@ -2,18 +2,11 @@ var addTask = document.querySelector("inputtask");
 var iconADD = document.querySelector("i");
 iconADD.className = "fas fa-plus";
 var totalindex = 0;
-iconADD.addEventListener("click", function () {
-    newTask();
-    placeholder();
-});
-addTask.addEventListener("keypress", function (event) {
-    if (event.code === "Enter") {
-        newTask();
-        placeholder();
-    }
-});
 function total() {
     document.querySelector("h3").innerHTML = totalindex + " tasks open";
+}
+function placeholder() {
+    addTask.value = "";
 }
 // Funktion: Neue Aufgabe wird 
 function newTask() {
@@ -32,6 +25,17 @@ function newTask() {
     container.appendChild(check);
     container.appendChild(text);
     container.appendChild(trash);
+    // Event-Listener fürs Abschicken des Textfelds
+    iconADD.addEventListener("click", function () {
+        newTask();
+        placeholder();
+    });
+    addTask.addEventListener("keypress", function (event) {
+        if (event.code === "Enter") {
+            newTask();
+            placeholder();
+        }
+    });
     // Icon-Nutzung
     circle.addEventListener("click", function () {
         this.classList.add("inactive");
@@ -48,9 +52,6 @@ function newTask() {
     });
     totalindex++;
     total();
-}
-function placeholder() {
-    addTask.value = "";
 }
 //# sourceMappingURL=TypeScript.js.map
 //# sourceMappingURL=aufgabe9.js.map
