@@ -1,4 +1,4 @@
-var addTask: HTMLElement = document.getElementById("inputtask");
+var addTask: HTMLInputElement = document.querySelector("inputtask");
 var iconADD: HTMLElement = document.querySelector("i");
 iconADD.className = "fas fa-plus";
 var totalindex: number = 0;
