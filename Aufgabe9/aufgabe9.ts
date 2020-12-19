@@ -8,7 +8,7 @@ function total(): void {
     document.querySelector("h3").innerHTML = totalindex + " are open";
 }
 function placeholder(): void {
-    document.getElementById("#inputtask").value = "";
+    addTask.value = "";
 }
 
 function newTask(): void {
