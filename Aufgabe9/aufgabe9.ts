@@ -64,9 +64,6 @@ addTask.addEventListener("keypress", function (event: KeyboardEvent): void {
       }
   });
 
-//# sourceMappingURL=ToDo.js.map
-
-
 
 
 
