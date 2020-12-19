@@ -1,14 +1,14 @@
-var addTask = document.querySelector("inputtask");
+var addTask = document.querySelector("#inputtask");
+var totalindex = 0;
+var liElement = document.querySelector(".element");
 var iconADD = document.querySelector("i");
 iconADD.className = "fas fa-plus";
-var totalindex = 0;
 function total() {
-    document.querySelector("h3").innerHTML = totalindex + " tasks open";
+    document.querySelector("h3").innerHTML = totalindex + " are open";
 }
 function placeholder() {
-    addTask.value = "";
+    document.getElementById("#inputtask").value = "";
 }
-// Funktion: Neue Aufgabe wird 
 function newTask() {
     var container = document.createElement("div");
     var circle = document.createElement("i");
@@ -25,18 +25,6 @@ function newTask() {
     container.appendChild(check);
     container.appendChild(text);
     container.appendChild(trash);
-    // Event-Listener fürs Abschicken des Textfelds
-    iconADD.addEventListener("click", function () {
-        newTask();
-        placeholder();
-    });
-    addTask.addEventListener("keypress", function (event) {
-        if (event.code === "Enter") {
-            newTask();
-            placeholder();
-        }
-    });
-    // Icon-Nutzung
     circle.addEventListener("click", function () {
         this.classList.add("inactive");
         check.classList.remove("inactive");
@@ -53,5 +41,17 @@ function newTask() {
     totalindex++;
     total();
 }
+// Event-Listener fürs Abschicken des Textfelds
+iconADD.addEventListener("click", function () {
+    newTask();
+    placeholder();
+});
+addTask.addEventListener("keypress", function (event) {
+    if (event.code === "Enter") {
+        newTask();
+        placeholder();
+    }
+});
+//# sourceMappingURL=ToDo.js.map
 //# sourceMappingURL=TypeScript.js.map
 //# sourceMappingURL=aufgabe9.js.map
