@@ -102,7 +102,7 @@ function drawListToDOM(): void {
          * hier muss die Zeichenkette unterbrochen werden.
          */
         todo.innerHTML =  "<span class='check " + myArray[index].todosChecked + "'><i class='fas fa-check'></i></span>"
-                            + myArray[index] +
+                            + myArray[index].todosText + 
                             "<span class='trash fas fa-trash-alt'></span>";
 
         // Zuweisen der Event-Listener für den Check- und den Trash-Button
