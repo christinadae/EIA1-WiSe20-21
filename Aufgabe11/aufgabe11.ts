@@ -127,22 +127,26 @@ function drawListToDOM(): void {
     }
 
     updateCounter();
-    updateOpen();
-    updateDone();
-
 }
-
 function updateCounter(): void {
+    let opentasks: number = 0; 
+    let donetasks: number = 0;
+
+    for (let index: number = 0; index < myArray.length; index++) {
+        if ( myArray[index].todosChecked == true) {
+            donetasks ++;
+        }
+        else (
+            opentasks ++
+        );
+    }
+    
     counterDOMElement.innerHTML = myArray.length + " in total";
-}
+    doneDOMElement.innerHTML = donetasks + " tasks done";
+    openDOMElement.innerHTML = opentasks + " tasks open";
+   }
+   
 
-function updateOpen(): void {
-    openDOMElement.innerHTML = myArray.length + " tasks open";
-}
-
-function updateDone(): void {
-    doneDOMElement.innerHTML = myArray.length + " tasks done";
-}
 
 /**
  * Ein neues ToDo wird folgendermaßen erstellt:

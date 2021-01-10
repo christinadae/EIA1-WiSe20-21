@@ -109,17 +109,20 @@ var L11;
             _loop_1(index_1);
         }
         updateCounter();
-        updateOpen();
-        updateDone();
     }
     function updateCounter() {
+        var opentasks = 0;
+        var donetasks = 0;
+        for (var index_2 = 0; index_2 < myArray.length; index_2++) {
+            if (myArray[index_2].todosChecked == true) {
+                donetasks++;
+            }
+            else
+                (opentasks++);
+        }
         counterDOMElement.innerHTML = myArray.length + " in total";
-    }
-    function updateOpen() {
-        openDOMElement.innerHTML = myArray.length + " tasks open";
-    }
-    function updateDone() {
-        doneDOMElement.innerHTML = myArray.length + " tasks done";
+        doneDOMElement.innerHTML = donetasks + " tasks done";
+        openDOMElement.innerHTML = opentasks + " tasks open";
     }
     /**
      * Ein neues ToDo wird folgendermaßen erstellt:
