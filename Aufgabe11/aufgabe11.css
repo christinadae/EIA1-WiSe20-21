@@ -13,6 +13,14 @@ main {
     color: grey;
 }
 
+#open {
+    color: grey;   
+}
+
+#done {
+    color: grey;
+}
+
 .inputGroup {
     position: relative;
 }

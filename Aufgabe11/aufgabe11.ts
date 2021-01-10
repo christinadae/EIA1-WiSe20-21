@@ -46,6 +46,8 @@ var inputDOMElement: HTMLInputElement;
 var addButtonDOMElement: HTMLElement;
 var todosDOMElement: HTMLElement;
 var counterDOMElement: HTMLElement;
+var openDOMElement: HTMLElement;
+var doneDOMElement: HTMLElement;
 
 /**
  * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
@@ -62,6 +64,9 @@ window.addEventListener("load", function(): void {
     addButtonDOMElement = document.querySelector("#addButton");
     todosDOMElement = document.querySelector("#todos");
     counterDOMElement = document.querySelector("#counter");
+    openDOMElement = document.querySelector("#open");
+    doneDOMElement = document.querySelector("#done");
+
 
     /**
      * Jetzt da der DOM verfügbar ist kann auch ein Event-Listener
@@ -109,6 +114,7 @@ function drawListToDOM(): void {
             // hier wird der Index, also die aktuelle Stelle im Array dieses ToDos,
             // übergeben, damit an der entsprechenden Stelle im Array der Wert geändert werden kann.
             toggleCheckState(index);
+            
         });
         todo.querySelector(".trash").addEventListener("click", function(): void {
             // hier wird der Index, also die aktuelle Stelle im Array dieses ToDos,
@@ -121,10 +127,21 @@ function drawListToDOM(): void {
     }
 
     updateCounter();
+    updateOpen();
+    updateDone();
+
 }
 
 function updateCounter(): void {
     counterDOMElement.innerHTML = myArray.length + " in total";
+}
+
+function updateOpen(): void {
+    openDOMElement.innerHTML = myArray.length + " tasks open";
+}
+
+function updateDone(): void {
+    doneDOMElement.innerHTML = myArray.length + " tasks done";
 }
 
 /**
