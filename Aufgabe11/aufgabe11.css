@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: rgba(215, 215, 215);
+    background-image: url(./bgimages/3.JPG);
+    opacity: 95%;
 }
 
 main {
@@ -9,18 +10,28 @@ main {
     text-align: center;
 }
 
+h1 {
+    background-color: #ffecd4;
+    font-size: 50px;
+}
+
 #counter {
     color: grey;
+    background-color: #ffecd4;;
+    font-size: 20px;
 }
 
 #open {
-    color: grey;   
+    color: grey;
+    background-color: #ffecd4;
+    font-size: 20px;
 }
 
 #done {
     color: grey;
+    background-color: #ffecd4;
+    font-size: 20px;
 }
-
 .inputGroup {
     position: relative;
 }
