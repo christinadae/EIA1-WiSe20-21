@@ -33,8 +33,6 @@ let myArray: MyInterface[] = [
     }
 ];
 
-
-
 /**
  * Die Anwendung wird immer wieder auf die selben
  * DOM-Elemente zugreifen müssen. Damit diese Elemente nicht 
@@ -48,6 +46,9 @@ var todosDOMElement: HTMLElement;
 var counterDOMElement: HTMLElement;
 var openDOMElement: HTMLElement;
 var doneDOMElement: HTMLElement;
+
+
+declare var Artyom: any;
 
 /**
  * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
@@ -79,6 +80,43 @@ window.addEventListener("load", function(): void {
      * aus den Arrays in den DOM gezeichnet werden.
      */
     drawListToDOM();
+
+});
+// Arytom Sprachassistenten
+
+
+
+window.addEventListener("load", function(): void {
+    const artyom: any = new Artyom();
+    
+    artyom.addCommands({
+        indexes: ["erstelle Aufgabe *, Erstelle eine Aufgabe *, Aufgabe erstellen*, Add another task * "],
+        smart: true,
+        action: function(i: any, wildcard: string): void {
+            console.log("Neue Aufgabe wird erstellt: " + wildcard);
+        }
+    });
+    
+    function startContinuousArtyom(): void {
+        artyom.fatality();
+    
+        setTimeout(
+            function(): void {
+                artyom.initialize({
+                    lang: "de-DE",
+                    continuous: true,
+                    listen: true,
+                    interimResults: true,
+                    debug: true
+                }).then(function(): void {
+                    console.log("Ready!");
+                });
+            }, 
+            250);
+    }
+    
+    startContinuousArtyom();
+    
 });
 
 function drawListToDOM(): void {

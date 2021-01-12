@@ -67,6 +67,32 @@ var L11;
          */
         drawListToDOM();
     });
+    // Arytom Sprachassistenten
+    window.addEventListener("load", function () {
+        var artyom = new Artyom();
+        artyom.addCommands({
+            indexes: ["erstelle Aufgabe *, Erstelle eine Aufgabe *, Aufgabe erstellen*, Add another task * "],
+            smart: true,
+            action: function (i, wildcard) {
+                console.log("Neue Aufgabe wird erstellt: " + wildcard);
+            }
+        });
+        function startContinuousArtyom() {
+            artyom.fatality();
+            setTimeout(function () {
+                artyom.initialize({
+                    lang: "de-DE",
+                    continuous: true,
+                    listen: true,
+                    interimResults: true,
+                    debug: true
+                }).then(function () {
+                    console.log("Ready!");
+                });
+            }, 250);
+        }
+        startContinuousArtyom();
+    });
     function drawListToDOM() {
         // alle todos erst einmal aus dem DOM löschen
         todosDOMElement.innerHTML = "";
