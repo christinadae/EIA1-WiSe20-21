@@ -96,52 +96,40 @@ var L11;
         myArray.splice(index, 1);
         drawListToDOM();
     }
-})(L11 || (L11 = {}));
-var artyomStart = false;
-window.addEventListener("load", function () {
-    var artyom = new Artyom();
-    artyom.addCommands({
-        indexes: ["erstelle Aufgabe *"],
-        smart: true,
-        action: function (i, wildcard) {
-            console.log("Neue Aufgabe wird erstellt: " + wildcard);
-            myArray.unshift({
-                todosText: wildcard,
-                todosChecked: false
+    window.addEventListener("load", function () {
+        var artyom = new Artyom();
+        artyom.addCommands({
+            indexes: ["erstelle Aufgabe *"],
+            smart: true,
+            action: function (i, wildcard) {
+                console.log("Neue Aufgabe wird erstellt: " + wildcard);
+                myArray.unshift({
+                    todosText: wildcard,
+                    todosChecked: false
+                });
+                drawListToDOM();
+            }
+        });
+        function startArtyom() {
+            artyom.initialize({
+                lang: "de-DE",
+                continuous: true,
+                listen: true,
+                interimResults: true,
+                debug: true
             });
-            drawListToDOM();
         }
-    });
-    document.getElementById("record").addEventListener("click", function () {
-        startArtyom();
-        artyom.say("Sage Erstelle Aufgabe");
-    });
-    document.getElementById("stop").addEventListener("click", function () {
-        stopArtyom();
-        artyom.say("Die Spracherkennung wurde gestoppt");
-    });
-    function startArtyom() {
-        artyom.initialize({
-            lang: "de-DE",
-            continuous: true,
-            listen: true,
-            interimResults: true,
-            debug: true
+        function stopArtyom() {
+            artyom.fatality();
+        }
+        document.getElementById("record").addEventListener("click", function () {
+            startArtyom();
+            artyom.say("Sage Erstelle Aufgabe");
         });
-    }
-    function stopArtyom() {
-        artyom.fatality();
-    }
-});
-/* setTimeout(
-    function(): void {
-        artyom.initialize({
-            
-        }).then(function(): void {
-            console.log("Ready!");
+        document.getElementById("stop").addEventListener("click", function () {
+            stopArtyom();
+            artyom.say("Die Spracherkennung wurde gestoppt");
         });
-    },
-    250);
-}
-*/
+    });
+})(L11 || (L11 = {}));
 //# sourceMappingURL=aufgabe11.js.map

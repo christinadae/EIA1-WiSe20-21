@@ -150,6 +150,22 @@ window.addEventListener("load", function(): void {
         }
     });
 
+        
+    function startArtyom(): void {
+        artyom.initialize({
+            lang: "de-DE",
+            continuous: true,
+            listen: true,
+            interimResults: true,
+            debug: true
+    });
+    }
+
+    function stopArtyom(): void {
+        artyom.fatality();
+    }
+
+
     document.getElementById("record").addEventListener("click", function(): void {
     startArtyom();
     artyom.say("Sage Erstelle Aufgabe");
@@ -162,35 +178,5 @@ window.addEventListener("load", function(): void {
     
         });
 
-    
-    function startArtyom(): void {
-        artyom.initialize({
-            lang: "de-DE",
-            continuous: true,
-            listen: true,
-            interimResults: true,
-            debug: true
-});
-    }
-
-    function stopArtyom(): void {
-        artyom.fatality();
-    }
-
-});
-    
-        /* setTimeout(
-            function(): void {
-                artyom.initialize({
-                    
-                }).then(function(): void {
-                    console.log("Ready!");
-                });
-            }, 
-            250);
-    }
-    */
-    
-   
-
+    });
 }
