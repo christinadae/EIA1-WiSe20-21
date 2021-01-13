@@ -132,6 +132,9 @@ function deleteTodo(index: number): void {
 // Arytom Sprachassistenten
 
 declare var Artyom: any;
+var artyomStart: boolean = false;
+
+
 
 window.addEventListener("load", function(): void {
 
@@ -148,8 +151,21 @@ window.addEventListener("load", function(): void {
             drawListToDOM();
         }
     });
+
+    document.getElementById("record").addEventListener("click", function(): void {
+    startArtyom();
+    artyom.say("Sage Erstelle Aufgabe");
+
+    });
+
+    document.getElementById("stop").addEventListener("click", function(): void {
+        stopArtyom();
+        artyom.say("Die Spracherkennung wurde gestoppt");
     
-    function startContinuousArtyom(): void {
+        });
+
+    
+    function startArtyom(): void {
         artyom.initialize({
             lang: "de-DE",
             continuous: true,
@@ -158,6 +174,12 @@ window.addEventListener("load", function(): void {
             debug: true
 });
     }
+
+    function stopArtyom(): void {
+        artyom.fatality();
+    }
+
+});
     
         /* setTimeout(
             function(): void {
@@ -171,6 +193,5 @@ window.addEventListener("load", function(): void {
     }
     */
     
-    startContinuousArtyom();
-    
-});
+   
+
