@@ -1,8 +1,44 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./bgimages/3.JPG);
-    opacity: 95%;
+    /*background-image: url(./bgimages/3.JPG);*/
+    background-color: #5f8b87;
+    opacity: 99%;
 }
+
+#record {
+top: 50px;
+font-size: 60px;
+margin-bottom: 25px;
+color: #555351;
+margin-top: 15px;
+margin-right: 30px;
+}
+
+#stop {
+top: 50px;
+font-size: 60px;
+margin-bottom: 25px;
+margin-top: 15px;
+color: #555351;
+}  
+
+#record:hover {
+    top: 50px;
+    font-size: 60px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    color: #ffecd4; 
+    margin-right: 30px;
+}
+
+#stop:hover {
+    top: 50px;
+    font-size: 60px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    color: #ffecd4;   
+}
+
 
 main {
     width: 500px;
@@ -11,26 +47,35 @@ main {
 }
 
 h1 {
-    background-color: #ffecd4;
-    font-size: 50px;
+ 
+    font-size: 55px;
+    color:  #b4ccca;
+    letter-spacing: 20px;
+    font-weight: lighter;
+    
 }
 
 #counter {
-    color: grey;
-    background-color: #ffecd4;;
+    color: white;
+    letter-spacing: 8px;
+   
     font-size: 20px;
+    
+    
 }
 
 #open {
-    color: grey;
-    background-color: #ffecd4;
+    color: white;
+    letter-spacing: 8px;
     font-size: 20px;
+    
 }
 
 #done {
-    color: grey;
-    background-color: #ffecd4;
+    color: white;
+    letter-spacing: 8px;
     font-size: 20px;
+    
 }
 .inputGroup {
     position: relative;
@@ -49,8 +94,8 @@ h1 {
 
 #addButton {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 14px;
+    top: 115px;
     font-size: 30px;
     background: none;
     border: none;
