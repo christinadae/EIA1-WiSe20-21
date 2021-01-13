@@ -97,6 +97,7 @@ var L11;
         drawListToDOM();
     }
 })(L11 || (L11 = {}));
+var artyomStart = false;
 window.addEventListener("load", function () {
     var artyom = new Artyom();
     artyom.addCommands({
@@ -111,7 +112,15 @@ window.addEventListener("load", function () {
             drawListToDOM();
         }
     });
-    function startContinuousArtyom() {
+    document.getElementById("record").addEventListener("click", function () {
+        startArtyom();
+        artyom.say("Sage Erstelle Aufgabe");
+    });
+    document.getElementById("stop").addEventListener("click", function () {
+        stopArtyom();
+        artyom.say("Die Spracherkennung wurde gestoppt");
+    });
+    function startArtyom() {
         artyom.initialize({
             lang: "de-DE",
             continuous: true,
@@ -120,17 +129,19 @@ window.addEventListener("load", function () {
             debug: true
         });
     }
-    /* setTimeout(
-        function(): void {
-            artyom.initialize({
-                
-            }).then(function(): void {
-                console.log("Ready!");
-            });
-        },
-        250);
+    function stopArtyom() {
+        artyom.fatality();
+    }
+});
+/* setTimeout(
+    function(): void {
+        artyom.initialize({
+            
+        }).then(function(): void {
+            console.log("Ready!");
+        });
+    },
+    250);
 }
 */
-    startContinuousArtyom();
-});
 //# sourceMappingURL=aufgabe11.js.map
