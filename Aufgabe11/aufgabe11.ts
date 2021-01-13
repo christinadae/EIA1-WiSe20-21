@@ -127,12 +127,10 @@ function deleteTodo(index: number): void {
     drawListToDOM();
 }
 
-}
 
 // Arytom Sprachassistenten
 
 declare var Artyom: any;
-var artyomStart: boolean = false;
 
 
 
@@ -195,3 +193,4 @@ window.addEventListener("load", function(): void {
     
    
 
+}
