@@ -110,16 +110,6 @@ var L11;
                 drawListToDOM();
             }
         });
-        /*artyom.stopCommands({
-            indexes: ["Spracherkennung beenden *"],
-            smart: false,
-            listen: false,
-            action: function(i: any): void {
-                console.log("Die Spracherkennung wird gestoppt ");
-                stopArtyom();
-            }
-        });
-        */
         function startArtyom() {
             artyom.initialize({
                 lang: "de-DE",
