@@ -150,6 +150,17 @@ window.addEventListener("load", function(): void {
         }
     });
 
+    /*artyom.stopCommands({
+        indexes: ["Spracherkennung beenden *"],
+        smart: false,
+        listen: false,
+        action: function(i: any): void {
+            console.log("Die Spracherkennung wird gestoppt ");
+            stopArtyom();
+        }
+    });
+    */
+
         
     function startArtyom(): void {
         artyom.initialize({
@@ -162,9 +173,18 @@ window.addEventListener("load", function(): void {
     }
 
     function stopArtyom(): void {
-        artyom.fatality();
+        artyom.fatality(); 
+        console.log("Artyom wurde gestoppt");
     }
-
+    artyom.stopCommands({
+        indexes: ["Spracherkennung beenden *"],
+        smart: false,
+        listen: false,
+        action: function(i: any): void {
+            console.log("Die Spracherkennung wird gestoppt ");
+            stopArtyom();
+        }
+    });
 
     document.getElementById("record").addEventListener("click", function(): void {
     startArtyom();
