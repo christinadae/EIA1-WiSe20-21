@@ -110,6 +110,16 @@ var L11;
                 drawListToDOM();
             }
         });
+        /*artyom.stopCommands({
+            indexes: ["Spracherkennung beenden *"],
+            smart: false,
+            listen: false,
+            action: function(i: any): void {
+                console.log("Die Spracherkennung wird gestoppt ");
+                stopArtyom();
+            }
+        });
+        */
         function startArtyom() {
             artyom.initialize({
                 lang: "de-DE",
@@ -118,9 +128,11 @@ var L11;
                 interimResults: true,
                 debug: true
             });
+            console.log("Artyom hört dir jetzt zu");
         }
         function stopArtyom() {
             artyom.fatality();
+            console.log("Artyom wurde gestoppt");
         }
         document.getElementById("record").addEventListener("click", function () {
             startArtyom();

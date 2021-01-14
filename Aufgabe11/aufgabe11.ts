@@ -151,14 +151,7 @@ window.addEventListener("load", function(): void {
 
 });
 
-    window.addEventListener("load", function(): void {
-artyom.stopCommands({
-    indexes: ["Spracherkennung beenden"]
-});
-stopArtyom();
-console.log("Spracherkennung wurde beendet");
 
-});
 
     /*artyom.stopCommands({
         indexes: ["Spracherkennung beenden *"],
@@ -180,13 +173,17 @@ console.log("Spracherkennung wurde beendet");
             listen: true,
             interimResults: true,
             debug: true
+            
     });
+        console.log("Artyom hört dir jetzt zu");
     }
 
     function stopArtyom(): void {
         artyom.fatality(); 
         console.log("Artyom wurde gestoppt");
     }
+
+    
 
     document.getElementById("record").addEventListener("click", function(): void {
     startArtyom();
