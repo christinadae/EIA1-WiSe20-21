@@ -102,7 +102,7 @@ var L11;
             indexes: ["erstelle Aufgabe *"],
             smart: true,
             action: function (i, wildcard) {
-                console.log("Neue Aufgabe wird erstellt: " + wildcard);
+                console.log("Neue Aufgabe wurde erstellt: " + wildcard);
                 myArray.unshift({
                     todosText: wildcard,
                     todosChecked: false
