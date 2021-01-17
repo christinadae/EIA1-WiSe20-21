@@ -141,7 +141,7 @@ window.addEventListener("load", function(): void {
         indexes: ["erstelle Aufgabe *"],
         smart: true,
         action: function(i: any, wildcard: string): void {
-            console.log("Neue Aufgabe wird erstellt: " + wildcard);
+            console.log("Neue Aufgabe wurde erstellt: " + wildcard);
             myArray.unshift({
                 todosText: wildcard,
                 todosChecked: false
