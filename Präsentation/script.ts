@@ -1,5 +1,5 @@
 
-namespace Präsentation {
+namespace powerpoint2 {
 // .innerHTML selektiert das Element und ein überschreibt diesen mit einem neuen Wert (string)
 
 document.querySelector("h1").innerHTML = "Eine neue Überschrift";
@@ -25,6 +25,7 @@ button.innerHTML = "Ein neuer Button";
 
 function myFunction() {
 document.querySelector("h1").setAttribute("color", "red");
+console.log("ich wurde geklickt");
 }
 
 
