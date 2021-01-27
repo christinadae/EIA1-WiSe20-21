@@ -23,14 +23,14 @@ button.innerHTML = "Ein neuer Button";
 // .appendChild fügt ein Element zum Body hinzu
 
 
-function myFunction(meters: number) {
-
-var text: string = "Die Zahl ist: "
-var result = text + meters; 
+function myFunction() {
+document.querySelector("h1").setAttribute("color", "red");
 }
 
-myFunction(30);
-console.log(myFunction);
+
+
+
+
 
 
 }
