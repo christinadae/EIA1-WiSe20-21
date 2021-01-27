@@ -24,7 +24,7 @@ button.innerHTML = "Ein neuer Button";
 
 
 function myFunction() {
-document.querySelector("h1").setAttribute("color", "red");
+document.querySelector("h1").setAttribute("style", "color: red");
 console.log("ich wurde geklickt");
 }
 

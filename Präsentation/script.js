@@ -1,5 +1,5 @@
 var powerpoint;
-(function (powerpoint) {
+(function (powerpoint2) {
     // .innerHTML selektiert das Element und ein überschreibt diesen mit einem neuen Wert (string)
     document.querySelector("h1").innerHTML = "Eine neue Überschrift";
     // .querySelector selektiert ein entsprechendes DOM-Element per Tag-Selektor.
@@ -14,8 +14,8 @@ var powerpoint;
     // .createElement erstellt ein ganz neues Element
     // .appendChild fügt ein Element zum Body hinzu
     function myFunction() {
-        document.querySelector("h1").setAttribute("color", "red");
+        document.querySelector("h1").setAttribute("style", "color: red");
         console.log("ich wurde geklickt");
     }
-})(powerpoint || (powerpoint = {}));
+})(powerpoint2 || (powerpoint2 = {}));
 //# sourceMappingURL=script.js.map
