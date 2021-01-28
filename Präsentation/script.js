@@ -1,4 +1,4 @@
-var powerpoint;
+var powerpoint2;
 (function (powerpoint2) {
     // .innerHTML selektiert das Element und ein überschreibt diesen mit einem neuen Wert (string)
     document.querySelector("h1").innerHTML = "Eine neue Überschrift";
@@ -15,7 +15,13 @@ var powerpoint;
     // .appendChild fügt ein Element zum Body hinzu
     function myFunction() {
         document.querySelector("h1").setAttribute("style", "color: red");
-        console.log("ich wurde geklickt");
     }
+    document.querySelector("h1").addEventListener("click", myFunction);
+    //                 Indizes:         0                1             2
+    var meineNoten = {
+        BWL: 3,
+        Audiotechnik: 2,
+        Medienpsychologie: 1.5
+    };
 })(powerpoint2 || (powerpoint2 = {}));
 //# sourceMappingURL=script.js.map

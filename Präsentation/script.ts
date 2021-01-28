@@ -25,13 +25,36 @@ button.innerHTML = "Ein neuer Button";
 
 function myFunction() {
 document.querySelector("h1").setAttribute("style", "color: red");
-console.log("ich wurde geklickt");
 }
 
 
+document.querySelector("h1").addEventListener("click", myFunction);
 
 
+//                 Indizes:         0                1             2
 
 
+var studentin: string = {
+    hochschule: "HFU",
+    studiengang: "Medienkonzeption",
+    lieblingskurs: "Mediengestaltung"
+};
+
+interface myInterface {
+
+hochschule: string;
+immatrikuliert: boolean;
+studiengang: string;
+semester: number;
+kurse: string[];
+}
+
+var studentin: myInterface = {
+    hochschule: "HFU",
+    immatrikuliert: true,
+    studiengang: "Medienkonzeption",
+    semester: 1,
+    kurse: ["Audiotechnik", "Mediengestaltung", "Medienpsychologie"]
+};
 
 }
